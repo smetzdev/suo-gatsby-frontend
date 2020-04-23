@@ -4,7 +4,6 @@ export const customBackgrounds = [
   {
     name: "darkBG",
     value: colors.gray[900],
-    default: true,
   },
   {
     name: "lightBG",

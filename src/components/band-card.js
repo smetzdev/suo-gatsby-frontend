@@ -6,7 +6,7 @@ const BandCard = () => {
   return (
     <a
       href="#"
-      className="relative max-w-md border-2 border-primary-600 inline-block"
+      className="relative max-w-md border-2 border-primary-800 inline-block"
       target="_blank"
     >
       <img src={BandImageDummy} alt="The Band Bandtitle" />

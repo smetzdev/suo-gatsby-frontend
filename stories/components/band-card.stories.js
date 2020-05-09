@@ -1,5 +1,6 @@
 import React from "react"
 import BandCard from "../../src/components/band-card"
+import TBACard from "../../src/components/tba-card"
 import { withPadding } from "../custom-decorators"
 
 export default {
@@ -9,3 +10,5 @@ export default {
 }
 
 export const Base = () => <BandCard />
+export const TBA = () => <TBACard />
+export const TBAWithContact = () => <TBACard withContactHint />

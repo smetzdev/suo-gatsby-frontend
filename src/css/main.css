@@ -597,6 +597,16 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: "DaysLater";
+
+  src: url("./fonts/28dayslater/bold.ttf");
+
+  font-style: normal;
+
+  font-weight: 700;
+}
+
 .container {
   width: 100%;
 }
@@ -626,8 +636,8 @@ video {
 }
 
 .btn {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
   --bg-opacity: 1;
@@ -636,11 +646,15 @@ video {
   --text-opacity: 1;
   color: #FFF0F0;
   color: rgba(255, 240, 240, var(--text-opacity));
-  font-weight: 600;
   display: inline-block;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  font-family: DaysLater, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn:focus {
@@ -2936,6 +2950,10 @@ video {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-display {
+  font-family: DaysLater, Helvetica, sans-serif;
 }
 
 .font-hairline {
@@ -12327,6 +12345,10 @@ body {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-display {
+    font-family: DaysLater, Helvetica, sans-serif;
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -21706,6 +21728,10 @@ body {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-display {
+    font-family: DaysLater, Helvetica, sans-serif;
   }
 
   .md\:font-hairline {
@@ -31089,6 +31115,10 @@ body {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-display {
+    font-family: DaysLater, Helvetica, sans-serif;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -40468,6 +40498,10 @@ body {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-display {
+    font-family: DaysLater, Helvetica, sans-serif;
   }
 
   .xl\:font-hairline {

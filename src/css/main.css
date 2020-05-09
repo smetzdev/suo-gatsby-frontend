@@ -607,6 +607,17 @@ video {
   font-weight: 700;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: DaysLater, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .container {
   width: 100%;
 }
@@ -10055,6 +10066,25 @@ video {
 
 .delay-1000 {
   transition-delay: 1000ms;
+}
+
+.absolute-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute-center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 body {

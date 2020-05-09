@@ -666,11 +666,14 @@ h6 {
   line-height: 1;
   text-transform: uppercase;
   cursor: pointer;
+  background-size: cover;
+  background-image: url("../images/grunge-light.png"),
+    url("../images/grunge-dark.png");
 }
 
 .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  box-shadow: 0 0 0 3px rgba(173, 31, 31, 0.5);
 }
 
 .btn:hover {
@@ -10093,12 +10096,14 @@ h6 {
 
 .bg-grungy-dark {
   background-image: url("../images/grunge-dark.png");
-  background-blend-mode: darken;
 }
 
 .bg-grungy-primary {
   background-image: url("../images/grunge-primary.png");
-  background-blend-mode: darken;
+}
+
+.shadow-outline-primary {
+  box-shadow: 0 0 0 3px rgba(173, 31, 31, 0.5);
 }
 
 body {

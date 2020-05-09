@@ -2,10 +2,13 @@
   @apply py-3 px-4 bg-primary-500 text-primary-100 inline-block;
   @apply transition-colors ease-in-out duration-150;
   @apply font-display tracking-widest leading-none uppercase cursor-pointer;
+  @apply bg-cover;
+  background-image: url("../images/grunge-light.png"),
+    url("../images/grunge-dark.png");
 }
 
 .btn:focus {
-  @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline-primary;
 }
 
 .btn:hover {

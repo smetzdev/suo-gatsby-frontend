@@ -19,10 +19,12 @@
 
 .bg-grungy-dark {
   background-image: url("../images/grunge-dark.png");
-  background-blend-mode: darken;
 }
 
 .bg-grungy-primary {
   background-image: url("../images/grunge-primary.png");
-  background-blend-mode: darken;
+}
+
+.shadow-outline-primary {
+  box-shadow: 0 0 0 3px rgba(173, 31, 31, 0.5);
 }

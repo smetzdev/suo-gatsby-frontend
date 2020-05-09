@@ -15,10 +15,10 @@ const VideoHero = () => {
 
       <h1 className="text-4xl absolute-center text-center inline-block bg-grungy-primary bg-contain p-8 lg:text-6xl leading-none rounded-md max-w-lg">
         Schlacht um Otzenhausen
-        <span className="hidden lg:block text-lg block text-primary-300 mt-2">
+        <span className="hidden lg:block text-lg block text-primary-400 mt-2">
           07 November 2020 | Hunnenringhalle
         </span>
-        <span className="text-sm block lg:hidden text-primary-300 leading-tight mt-2">
+        <span className="text-sm block lg:hidden text-primary-400 leading-tight mt-2">
           07 November 2020
           <br />
           Hunnenringhalle

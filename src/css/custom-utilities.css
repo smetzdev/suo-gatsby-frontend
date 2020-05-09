@@ -1,0 +1,28 @@
+.absolute-center-x {
+  @apply absolute -translate-x-1/2;
+  left: 50%;
+}
+.absolute-center-y {
+  @apply absolute -translate-y-1/2;
+  top: 50%;
+}
+.absolute-center {
+  @apply absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-grungy-light {
+  background-image: url("../images/grunge-light.png");
+}
+
+.bg-grungy-dark {
+  background-image: url("../images/grunge-dark.png");
+  background-blend-mode: darken;
+}
+
+.bg-grungy-primary {
+  background-image: url("../images/grunge-primary.png");
+  background-blend-mode: darken;
+}

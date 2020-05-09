@@ -4,7 +4,7 @@
 @import "tailwindcss/components";
 @import "./custom-components.css";
 @import "tailwindcss/utilities";
-
+@import "./custom-utilities.css";
 body {
   @apply bg-gray-900 text-gray-100;
 }

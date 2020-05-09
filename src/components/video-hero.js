@@ -13,7 +13,7 @@ const VideoHero = () => {
         src={DummyVideo}
       ></video>
 
-      <h1 className="text-4xl absolute-center text-center inline-block bg-gray-900 bg-opacity-50 p-8 lg:text-6xl leading-none rounded-md max-w-lg">
+      <h1 className="text-4xl absolute-center text-center inline-block bg-grungy-primary bg-contain p-8 lg:text-6xl leading-none rounded-md max-w-lg">
         Schlacht um Otzenhausen
         <span className="hidden lg:block text-lg block text-primary-300 mt-2">
           07 November 2020 | Hunnenringhalle

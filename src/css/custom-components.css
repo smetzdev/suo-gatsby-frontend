@@ -3,6 +3,7 @@
   @apply transition-colors ease-in-out duration-150;
   @apply font-display tracking-widest leading-none uppercase cursor-pointer;
   @apply bg-cover;
+  @apply rounded-md;
   background-image: url("../images/grunge-light.png"),
     url("../images/grunge-dark.png");
 }

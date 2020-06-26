@@ -1,0 +1,18 @@
+{
+  "presets": ["babel-preset-gatsby"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@components": "./src/components",
+          "@images": "./src/images",
+          "@designtokens": "./cwo-designtokens",
+          "@styles": "./src/css",
+          "@customTypes": "./src/custom-types"
+        }
+      }
+    ]
+  ]
+}

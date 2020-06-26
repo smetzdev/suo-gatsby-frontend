@@ -1,6 +1,6 @@
 import React from "react"
-import BandCard from "../../src/components/band-card"
-import TBACard from "../../src/components/tba-card"
+import BandCard from "@components/band-card"
+import TBACard from "@components/tba-card"
 import { withPadding } from "../custom-decorators"
 
 export default {

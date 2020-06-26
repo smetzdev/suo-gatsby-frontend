@@ -1,6 +1,6 @@
 import React from "react"
-import BandImageDummy from "../images/band-image-dummy.jpg"
-import BandLogoDummy from "../images/band-logo-dummy.png"
+import BandImageDummy from "@images/band-image-dummy.jpg"
+import BandLogoDummy from "@images/band-logo-dummy.png"
 
 const BandCard = () => {
   return (

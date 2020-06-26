@@ -1,7 +1,10 @@
-import PropTypes from "prop-types"
 import React from "react"
 
-const TBABand = ({ withContactHint }) => {
+interface withContactHint {
+  withContactHint?: boolean
+}
+
+const TBABand: React.FC<withContactHint> = ({ withContactHint }) => {
   return (
     <article className="border border-gray-600 border-dashed inline-block p-24 rounded-lg text-center">
       {withContactHint ? (
@@ -18,10 +21,6 @@ const TBABand = ({ withContactHint }) => {
       )}
     </article>
   )
-}
-
-TBABand.propTypes = {
-  withContactHint: PropTypes.bool,
 }
 
 export default TBABand

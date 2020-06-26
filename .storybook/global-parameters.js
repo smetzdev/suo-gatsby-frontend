@@ -1,4 +1,4 @@
-import { colors } from "../src/cwo-designtokens"
+import { colors } from "../cwo-designtokens"
 
 export const customBackgrounds = [
   {

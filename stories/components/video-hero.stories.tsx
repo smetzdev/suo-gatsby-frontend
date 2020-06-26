@@ -1,5 +1,5 @@
 import React from "react"
-import VideoHero from "../../src/components/video-hero"
+import VideoHero from "@components/video-hero"
 
 export default {
   title: "Components/VideoHero",

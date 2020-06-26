@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "allowJs": false,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@images/*": ["./src/images/*"],
+      "@designtokens": ["./cwo-designtokens"],
+      "@styles/*": ["./src/css/*"],
+      "@customTypes": ["./src/custom-types"]
+    }
+  }
+}

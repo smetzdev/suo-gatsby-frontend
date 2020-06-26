@@ -14,7 +14,7 @@ const TBABand = ({ withContactHint }) => {
           </a>
         </>
       ) : (
-        <p className="text-3xl text-gray-500">T.B.A.</p>
+        <p className="text-3xl text-gray-500 font-display">T.B.A.</p>
       )}
     </article>
   )

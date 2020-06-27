@@ -7,10 +7,13 @@
         "root": ["./src"],
         "alias": {
           "@components": "./src/components",
+          "@elements": "./src/elements",
           "@images": "./src/images",
           "@designtokens": "./cwo-designtokens",
           "@styles": "./src/css",
-          "@customTypes": "./src/custom-types"
+          "@customTypes": "./src/custom-types",
+          "@fakeData": "./fake-data",
+          "@dummyImages": "./fake-data/images"
         }
       }
     ]

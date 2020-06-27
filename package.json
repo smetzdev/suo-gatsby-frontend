@@ -8,6 +8,8 @@
     "autoprefixer": "^9.8.4",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-preset-react-app": "^9.1.2",
+    "color-convert": "^2.0.1",
+    "faker": "^4.1.0",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-manifest": "^2.3.5",

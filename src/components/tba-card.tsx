@@ -6,7 +6,7 @@ interface withContactHint {
 
 const TBABand: React.FC<withContactHint> = ({ withContactHint }) => {
   return (
-    <article className="border border-gray-600 border-dashed inline-block p-24 rounded-lg text-center">
+    <article className="border border-gray-700 border-dashed inline-block p-24 rounded-lg text-center">
       {withContactHint ? (
         <>
           <p className="text-3xl text-gray-500 mb-2">

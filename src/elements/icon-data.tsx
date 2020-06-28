@@ -48,6 +48,7 @@ const genreIconData = {
 }
 
 const globeIconData = {
+  defaultTitle: "Globe",
   width: 512,
   height: 512,
   description: () => (

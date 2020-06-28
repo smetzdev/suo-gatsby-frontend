@@ -2,19 +2,20 @@ export type bandLinkIconName =
   | "instagram"
   | "bandcamp"
   | "youtube"
-  | "globe"
   | "facebook"
-
-export type bandStage = "MainStage" | "ClubStage"
+  | "globe"
 
 export interface bandLink {
   href: string
-  iconName: bandLinkIconName
+  iconName: string
 }
 
 export interface band {
   title: string
+  bandImagePath: string
   genre: string
-  stage?: bandStage
+  startTime: string
+  endTime: string
+  stage: string
   links: bandLink[]
 }

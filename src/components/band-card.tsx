@@ -24,7 +24,7 @@ const BandCard: React.FC<band> = ({
 }) => {
   return (
     <article
-      className={`relative max-w-md inline-block rounded-md overflow-hidden bg-gray-800`}
+      className={`relative max-w-lg inline-block rounded-md overflow-hidden bg-gray-800`}
     >
       <img
         className="h-64 w-full object-cover object-center"

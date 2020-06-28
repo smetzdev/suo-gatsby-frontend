@@ -1,5 +1,5 @@
 import React from "react"
-import DummyVideo from "../videos/dummy-video.mp4"
+import TimelapseVideo from "../videos/timelapse.mp4"
 
 const VideoHero = () => {
   return (
@@ -9,8 +9,8 @@ const VideoHero = () => {
         muted
         loop
         playsInline
-        className="min-h-screen object-cover object-center opacity-25"
-        src={DummyVideo}
+        className="min-h-screen object-cover w-full object-center"
+        src={TimelapseVideo}
       ></video>
 
       <h1 className="text-4xl absolute-center text-center inline-block bg-grungy-primary bg-contain p-8 lg:text-6xl leading-none rounded-md max-w-lg">

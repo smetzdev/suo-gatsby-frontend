@@ -5,6 +5,8 @@ import VideoHero from "@components/video-hero"
 import AllBands from "@modules/all-bands"
 import Map from "@modules//map"
 
+// TODO: Add Video Lazyloading or no mobile Video
+// TODO: Add Privacy and Imprint
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />

@@ -6,8 +6,9 @@
       {
         "root": ["./src"],
         "alias": {
-          "@components": "./src/components",
           "@elements": "./src/elements",
+          "@components": "./src/components",
+          "@modules": "./src/modules",
           "@images": "./src/images",
           "@designtokens": "./cwo-designtokens",
           "@styles": "./src/css",

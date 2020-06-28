@@ -64,7 +64,7 @@ export const createfakeBand = () => ({
 
 // Returns 0-11 fakeBands (The rest gets filled)
 export const randomAmountOfFakeBands = (() => {
-  const bandAmount = faker.random.number({ min: 0, max: 11 })
+  const bandAmount = faker.random.number({ min: 1, max: 11 })
 
   return Array.from({ length: bandAmount }, createfakeBand)
 })()

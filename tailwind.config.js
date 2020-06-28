@@ -18,6 +18,10 @@ module.exports = {
       outline: `0 0 0 3px rgba(${shadowColor}, 0.5)`,
       none: "none",
     },
+    container: {
+      center: true,
+      padding: "1rem",
+    },
     extend: {
       colors: colors,
       fontFamily: {

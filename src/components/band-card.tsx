@@ -1,6 +1,6 @@
 import React from "react"
 import { Icon } from "@elements"
-import { band } from "@customTypes"
+import { band, withClassName } from "@customTypes"
 
 const getlinkIconTitle = (bandTitle: string, iconName: string): string => {
   const iconTitleMap = {
@@ -23,9 +23,15 @@ const BandCard: React.FC<band> = ({
   links,
 }) => {
   return (
-    <article className="relative max-w-sm inline-block rounded-md overflow-hidden">
-      <img src={bandImagePath} alt={title} />
-      <div className="bg-gray-800 p-5 text-lg">
+    <article
+      className={`relative max-w-md inline-block rounded-md overflow-hidden bg-gray-800`}
+    >
+      <img
+        className="h-64 w-full object-cover object-center"
+        src={bandImagePath}
+        alt={title}
+      />
+      <div className="p-5 text-lg">
         <h3 className="text-3xl text-primary-400 leading-none mb-2">{title}</h3>
         <p>
           <Icon

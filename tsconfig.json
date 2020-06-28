@@ -7,6 +7,7 @@
     "paths": {
       "@elements": ["./src/elements"],
       "@components/*": ["./src/components/*"],
+      "@modules/*": ["./src/modules/*"],
       "@images/*": ["./src/images/*"],
       "@designtokens": ["./cwo-designtokens"],
       "@styles/*": ["./src/css/*"],

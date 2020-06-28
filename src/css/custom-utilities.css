@@ -29,11 +29,11 @@
 
 /* Spacing */
 .page-module {
-  @apply py-24;
+  @apply py-16;
 }
 
 @screen md {
   .page-module {
-    @apply py-32;
+    @apply py-20;
   }
 }

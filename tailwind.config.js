@@ -5,6 +5,7 @@ const { colors } = require("./cwo-designtokens")
 const shadowColor = convert.hex.rgb(colors.primary[600]).join(",")
 
 module.exports = {
+  purge: ["./src/**/*.tsx"],
   theme: {
     boxShadow: {
       xs: `0 0 0 1px rgba(${shadowColor}, 0.05)`,

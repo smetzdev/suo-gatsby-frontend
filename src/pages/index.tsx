@@ -4,12 +4,12 @@ import SEO from "@components/seo"
 import VideoHero from "@components/video-hero"
 import AllBands from "@modules/all-bands"
 import Map from "@modules//map"
-import { twelveFakeBands } from "@fakeData"
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Home" />
     <VideoHero />
-    <AllBands bands={twelveFakeBands} />
+    <AllBands />
     <Map />
   </Layout>
 )

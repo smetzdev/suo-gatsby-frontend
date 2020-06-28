@@ -1,3 +1,6 @@
+import { GatsbyGraphQLObjectType } from "gatsby"
+import GatsbyImage, { GatsbyImageProps } from "gatsby-image"
+
 export type bandLinkIconName =
   | "instagram"
   | "bandcamp"
@@ -13,7 +16,8 @@ export interface bandLink {
 
 export interface band {
   title: string
-  bandImagePath: string
+  bandImagePath?: string
+  bandImageFluid?: any
   genre: string
   startTime: string
   endTime: string

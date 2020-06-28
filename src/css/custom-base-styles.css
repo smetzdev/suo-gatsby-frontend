@@ -13,3 +13,11 @@ h5,
 h6 {
   @apply font-display uppercase tracking-wider;
 }
+
+a {
+  @apply transition-colors duration-150 ease-in-out;
+}
+
+a:hover {
+  @apply text-primary-400;
+}

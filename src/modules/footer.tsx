@@ -5,7 +5,10 @@ const Footer = () => {
   return (
     <footer className="bg-black py-8 font-display">
       <div className="container flex justify-between">
-        <h5>&copy; 2020 Celtic Warriors Otzenhausen e.V.</h5>
+        <h5>
+          &copy; 2020{" "}
+          <a href="https://cwo-ev.de">Celtic Warriors Otzenhausen e.V.</a>
+        </h5>
         {/* <ul className="flex space-x-4">
           <li>
             <Link to="/impressum">Impressum</Link>

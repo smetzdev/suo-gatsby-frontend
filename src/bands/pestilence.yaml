@@ -1,0 +1,15 @@
+title: Pestilence
+bandImagePath: ./images/pestilence.jpg
+genre: Thrash Metal
+startTime: ""
+endTime: ""
+stage: MainStage
+links:
+  - iconName: youtube
+    href: https://www.youtube.com/playlist?playnext=1&list=PL89BeV1yK3BqY04LaAMLSXsfOral_YHWG&feature=gws_kp_artist
+  - iconName: spotify
+    href: https://open.spotify.com/artist/6JcFn4PlXFuXmhRXpOpsan?autoplay=true&v=A
+  - iconName: facebook
+    href: https://facebook.com/Pestilenceofficial/
+  - iconName: globe
+    href: http://www.pestilence.nl/

@@ -8,6 +8,7 @@ const getlinkIconTitle = (bandTitle: string, iconName: string): string => {
     bandcamp: `${bandTitle} auf Bandcamp`,
     youtube: `${bandTitle} auf YouTube`,
     facebook: `${bandTitle} auf Facebook`,
+    spotify: `${bandTitle} auf Spotify`,
     globe: `Website von ${bandTitle}`,
   }
   return iconTitleMap[iconName]

@@ -1,0 +1,15 @@
+title: Nepomuc
+bandImagePath: ./images/nepomuc.jpg
+genre: Akustik
+startTime: ""
+endTime: ""
+stage: MainStage
+links:
+  - iconName: facebook
+    href: https://facebook.com/nepomukke/
+  - iconName: youtube
+    href: https://www.youtube.com/channel/UCVbTH5c2tXu7gjO-YGpBrTQ
+  - iconName: bandcamp
+    href: https://nepomukke.bandcamp.com/
+  - iconName: instagram
+    href: https://www.instagram.com/nepomuk_music/

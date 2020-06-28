@@ -1,0 +1,13 @@
+title: Neorite
+bandImagePath: ./images/neorite.jpg
+genre: Rock
+startTime: ""
+endTime: ""
+stage: MainStage
+links:
+  - iconName: youtube
+    href: https://www.youtube.com/playlist?playnext=1&list=PLmfqiZlJOEGQqbn2keUbxItKRQ4R4JHNx&feature=gws_kp_artist
+  - iconName: facebook
+    href: https://facebook.com/neoritemusic/
+  - iconName: bandcamp
+    href: https://neorite.bandcamp.com/

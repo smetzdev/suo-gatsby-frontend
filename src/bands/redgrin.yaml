@@ -1,0 +1,11 @@
+title: Redgrin
+bandImagePath: ./images/redgrin.jpg
+genre: Death Metal
+startTime: ""
+endTime: ""
+stage: MainStage
+links:
+  - iconName: bandcamp
+    href: https://redgrin.bandcamp.com/
+  - iconName: facebook
+    href: https://www.facebook.com/REDGRINMETAL/

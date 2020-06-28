@@ -4,6 +4,7 @@ export type bandLinkIconName =
   | "youtube"
   | "facebook"
   | "globe"
+  | "spotify"
 
 export interface bandLink {
   href: string

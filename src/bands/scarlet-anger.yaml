@@ -1,0 +1,15 @@
+title: Scarlet Anger
+bandImagePath: ./images/scarlet-anger.jpg
+genre: Thrash Metal
+startTime: ""
+endTime: ""
+stage: MainStage
+links:
+  - iconName: globe
+    href: https://scarletanger.com/
+  - iconName: youtube
+    href: https://www.youtube.com/user/ScarletAnger
+  - iconName: bandcamp
+    href: https://scarletanger.bandcamp.com/
+  - iconName: facebook
+    href: https://facebook.com/ScarletAngerBand/

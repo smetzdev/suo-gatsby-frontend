@@ -1,0 +1,15 @@
+title: EXA
+bandImagePath: ./images/exa.jpg
+genre: Thrash Metal
+startTime: ""
+endTime: ""
+stage: MainStage
+links:
+  - iconName: youtube
+    href: https://www.youtube.com/playlist?playnext=1&list=PLl8G3RyUwhnuJljj7NMWpeEAYAxCF-7dQ&feature=gws_kp_artist
+  - iconName: spotify
+    href: https://open.spotify.com/artist/1h7Hmq4S3N6KmKYhCs4J6P?autoplay=true&v=A
+  - iconName: facebook
+    href: https://www.facebook.com/EXAthrashofficial/
+  - iconName: globe
+    href: https://exa-band.jimdofree.com/

@@ -11,6 +11,10 @@ const allStages = ["MainStage", "ClubStage"]
 const alllLinksArray = [
   {
     href: "https://cwo-ev.de",
+    iconName: "spotify",
+  },
+  {
+    href: "https://cwo-ev.de",
     iconName: "bandcamp",
   },
   {

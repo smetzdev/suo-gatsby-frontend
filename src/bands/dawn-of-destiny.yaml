@@ -1,0 +1,13 @@
+title: Dawn of Destiny
+bandImagePath: ./images/dawn-of-destiny.jpg
+genre: Power Metal
+startTime: ""
+endTime: ""
+stage: MainStage
+links:
+  - iconName: spotify
+    href: https://open.spotify.com/artist/6AOHVA5mVwHahUw5H4Fa45?autoplay=true&v=A
+  - iconName: youtube
+    href: https://www.youtube.com/playlist?playnext=1&list=PLC0x1MRBQPamxiw2hIkSOqbQRJiMgdiYx&feature=gws_kp_artist
+  - iconName: facebook
+    href: https://facebook.com/dawnofdestiny.de/

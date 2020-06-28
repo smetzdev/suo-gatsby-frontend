@@ -1,3 +1,4 @@
+/* Positioning */
 .absolute-center-x {
   @apply absolute -translate-x-1/2;
   left: 50%;
@@ -13,6 +14,7 @@
   transform: translate(-50%, -50%);
 }
 
+/* Grungy BGs */
 .bg-grungy-light {
   background-image: url("../images/grunge-light.png");
 }
@@ -25,6 +27,13 @@
   background-image: url("../images/grunge-primary.png");
 }
 
-.shadow-outline-primary {
-  box-shadow: 0 0 0 3px rgba(173, 31, 31, 0.5);
+/* Spacing */
+.page-module {
+  @apply py-24;
+}
+
+@screen md {
+  .page-module {
+    @apply py-32;
+  }
 }

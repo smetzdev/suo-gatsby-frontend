@@ -9,7 +9,7 @@
 }
 
 .btn:focus {
-  @apply outline-none shadow-outline-primary;
+  @apply outline-none shadow-outline;
 }
 
 .btn:hover {

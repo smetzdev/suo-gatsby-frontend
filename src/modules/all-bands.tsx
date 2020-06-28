@@ -10,7 +10,7 @@ interface allBandsProps {
 const AllBands: React.FC<allBandsProps> = ({ bands }) => {
   return (
     <section className="page-module container">
-      <ModuleHeadline>ModuleHeadline</ModuleHeadline>
+      <ModuleHeadline>Bands</ModuleHeadline>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 items-stretch">
         {bands.map((band, key) => (
           <BandCard key={key} {...band} />

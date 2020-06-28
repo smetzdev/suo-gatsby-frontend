@@ -19,3 +19,13 @@
 .btn:active {
   @apply bg-primary-700;
 }
+
+/* Module Headline */
+.module-headline:before,
+.module-headline:after {
+  content: "";
+  @apply bg-gray-700;
+  @apply bg-repeat-x;
+  @apply flex-1;
+  @apply h-px;
+}

@@ -8,7 +8,6 @@ const VideoHero = () => {
         autoPlay
         muted
         loop
-        playsInline
         className="hidden lg:block min-h-screen object-cover w-full object-center"
         src={TimelapseVideo}
       ></video>

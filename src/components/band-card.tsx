@@ -58,7 +58,7 @@ const BandCard: React.FC<band> = ({
             name="clock"
             className="h-4 w-auto inline-block mr-2 text-gray-600"
           />
-          {/* {startTime} – {endTime} // */}T.B.A. // {stage}
+          {startTime} – {endTime} // {stage}
         </p>
         {links.length > 0 && (
           <>

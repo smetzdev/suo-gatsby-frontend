@@ -1,8 +1,8 @@
 title: Pestilence
 bandImagePath: ./images/pestilence.jpg
 genre: Thrash Metal
-startTime: ""
-endTime: ""
+startTime: "00:00 Uhr"
+endTime: "01:00 Uhr"
 stage: MainStage
 links:
   - iconName: youtube

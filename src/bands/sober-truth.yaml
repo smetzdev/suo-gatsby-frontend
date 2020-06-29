@@ -3,7 +3,7 @@ bandImagePath: ./images/sober-truth.jpg
 genre: Melodic Metal
 startTime: ""
 endTime: ""
-stage: MainStage
+stage: ClubStage
 links:
   - iconName: spotify
     href: https://open.spotify.com/artist/4YxB08ThJAYNncAmzcuT4M?autoplay=true&v=A

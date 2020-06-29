@@ -3,7 +3,7 @@ bandImagePath: ./images/rising-glory.jpg
 genre: Heavy Rock n' Roll
 startTime: ""
 endTime: ""
-stage: MainStage
+stage: ClubStage
 links:
   - iconName: facebook
     href: https://facebook.com/risingglorymetal/

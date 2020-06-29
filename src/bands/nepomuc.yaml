@@ -3,7 +3,7 @@ bandImagePath: ./images/nepomuc.jpg
 genre: Akustik
 startTime: ""
 endTime: ""
-stage: MainStage
+stage: ClubStage
 links:
   - iconName: facebook
     href: https://facebook.com/nepomukke/

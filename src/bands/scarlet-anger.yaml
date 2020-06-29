@@ -3,7 +3,7 @@ bandImagePath: ./images/scarlet-anger.jpg
 genre: Thrash Metal
 startTime: ""
 endTime: ""
-stage: MainStage
+stage: ClubStage
 links:
   - iconName: globe
     href: https://scarletanger.com/

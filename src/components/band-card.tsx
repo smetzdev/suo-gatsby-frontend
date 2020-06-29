@@ -47,19 +47,19 @@ const BandCard: React.FC<band> = ({
           {title}
         </h3>
         <p>
-          {/* <Icon
+          <Icon
             name="genre"
             className="h-4 w-auto inline-block mr-2 text-gray-600"
-          /> */}
+          />
           {genre}
         </p>
-        {/* <p>
+        <p>
           <Icon
             name="clock"
             className="h-4 w-auto inline-block mr-2 text-gray-600"
           />
-          {startTime} – {endTime} // <span className="">{stage}</span>
-        </p> */}
+          {/* {startTime} – {endTime} // */}T.B.A. // {stage}
+        </p>
         {links.length > 0 && (
           <>
             <hr className="mt-6 mb-4 border-gray-600" />

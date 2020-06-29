@@ -8,7 +8,7 @@ const HTMLContent: React.FC<{ content: string }> = ({ content }) => {
       <section className="container">
         <Link
           to="/"
-          className="font-display text-primary-300 underline py-5 inline-block"
+          className="font-display text-4xl text-primary-300 underline py-5 inline-block"
         >
           &larr;Zurück zur Startseite
         </Link>

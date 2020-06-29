@@ -1,3 +1,10 @@
+---
+title: "Impressum"
+slug: "/impressum"
+---
+
+# Impressum
+
 ## Angaben gemäß § 5 TMG
 
 Celtic Warriors Otzenhausen e.V.  
@@ -59,6 +66,7 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
 
 ## Layout/Umsetzung:
 
-Sascha Metz
-Karl-Schurz-Straße 8a
-66119 Saarbrücken
+Sascha Metz  
+Karl-Schurz-Straße 8a  
+66119 Saarbrücken  
+[metz@raum3.de](mailto:metz@raum3.de)

@@ -43,7 +43,9 @@ const BandCard: React.FC<band> = ({
         />
       )}
       <div className="p-5 text-lg">
-        <h3 className="text-3xl text-primary-400 leading-none mb-2">{title}</h3>
+        <h3 className="text-2xl md:text-3xl text-primary-400 leading-none mb-2">
+          {title}
+        </h3>
         <p>
           {/* <Icon
             name="genre"

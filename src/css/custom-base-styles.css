@@ -21,3 +21,26 @@ a {
 a:hover {
   @apply text-primary-400;
 }
+
+.html-content h1,
+.html-content h2,
+.html-content h3,
+.html-content h4,
+.html-content h5,
+.html-content h6 {
+  @apply text-lg;
+  @apply mt-2;
+}
+
+.html-content h1 {
+  @apply text-2xl;
+}
+
+.html-content h2 {
+  @apply text-xl;
+}
+
+.html-content p:not(:last-child),
+.html-content ul:not(:last-child) {
+  @apply mb-6;
+}

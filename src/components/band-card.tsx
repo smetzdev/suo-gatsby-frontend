@@ -49,7 +49,7 @@ const BandCard: React.FC<band> = ({
             name="clock"
             className="h-4 w-auto inline-block mr-2 text-gray-600"
           />
-          {startTime} – {endTime} // {stage}
+          {startTime} – {endTime} Uhr / {stage}
         </p>
         {links.length > 0 && (
           <>

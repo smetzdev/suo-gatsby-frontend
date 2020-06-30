@@ -1,8 +1,8 @@
 title: EXA
 bandImage: ./images/exa.jpg
 genre: Thrash Metal
-startTime: "21:00 Uhr"
-endTime: "21:45 Uhr"
+startTime: "21:00"
+endTime: "21:45"
 stage: MainStage
 links:
   - iconName: youtube

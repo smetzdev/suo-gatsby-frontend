@@ -1,8 +1,8 @@
 title: Dawn of Destiny
 bandImage: ./images/dawn-of-destiny.jpg
 genre: Power Metal
-startTime: "18:20 Uhr"
-endTime: "19:05 Uhr"
+startTime: "18:20"
+endTime: "19:05"
 stage: MainStage
 links:
   - iconName: spotify

@@ -1,8 +1,8 @@
 title: Nepomuc
 bandImage: ./images/nepomuc.jpg
 genre: Akustik
-startTime: "19:05 Uhr"
-endTime: "19:50 Uhr"
+startTime: "19:05"
+endTime: "19:50"
 stage: ClubStage
 links:
   - iconName: facebook

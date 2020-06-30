@@ -1,8 +1,8 @@
 title: Scarlet Anger
 bandImage: ./images/scarlet-anger.jpg
 genre: Thrash Metal
-startTime: "20:25 Uhr"
-endTime: "21:10 Uhr"
+startTime: "20:25"
+endTime: "21:10"
 stage: ClubStage
 links:
   - iconName: globe

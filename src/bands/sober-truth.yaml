@@ -1,8 +1,8 @@
 title: Sober Truth
 bandImage: ./images/sober-truth.jpg
 genre: Melodic Metal
-startTime: "01:00 Uhr"
-endTime: "01:45 Uhr"
+startTime: "01:00"
+endTime: "01:45"
 stage: ClubStage
 links:
   - iconName: spotify

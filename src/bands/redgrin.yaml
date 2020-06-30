@@ -1,8 +1,8 @@
 title: Redgrin
 bandImage: ./images/redgrin.jpg
 genre: Death Metal
-startTime: "23:15 Uhr"
-endTime: "00:00 Uhr"
+startTime: "23:15"
+endTime: "00:00"
 stage: ClubStage
 links:
   - iconName: bandcamp

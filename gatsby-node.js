@@ -13,7 +13,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const result = await graphql(`
     query markdownPages {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/markdown-pages/" } }
+      ) {
         nodes {
           frontmatter {
             slug
@@ -31,7 +33,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const markdownPages = result.data.allMarkdownRemark.nodes
 
   // you'll call `createPage` for each result
-  markdownPages.forEach(({ frontmatter }, index) => {
+  markdownPages.forEach(({ frontmatter }) => {
     createPage({
       // This is the slug you created before
       // (or `node.frontmatter.slug`)

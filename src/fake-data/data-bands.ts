@@ -82,6 +82,7 @@ const imageData = useStaticQuery(graphql`
     }
   }
 `)
+
 export const useFakeBand = (): band => {
   return createfakeBand(imageData.allFile.nodes)
 }

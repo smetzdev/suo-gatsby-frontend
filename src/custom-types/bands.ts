@@ -1,4 +1,4 @@
-import { GatsbyImageProps } from "gatsby-image"
+import { FluidObject } from "gatsby-image"
 
 export type bandLinkIconName =
   | "instagram"
@@ -15,7 +15,11 @@ export interface bandLink {
 
 export interface band {
   title: string
-  bandImage?: GatsbyImageProps
+  bandImage?: {
+    childImageSharp: {
+      fluid: FluidObject
+    }
+  }
   genre: string
   startTime: string
   endTime: string

@@ -29,3 +29,14 @@
   @apply flex-1;
   @apply h-px;
 }
+
+/* Spacing */
+.page-module {
+  @apply py-16;
+}
+
+@screen md {
+  .page-module {
+    @apply py-20;
+  }
+}

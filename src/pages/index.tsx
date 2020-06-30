@@ -1,54 +1,69 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, PageProps, GatsbyGraphQLObjectType } from "gatsby"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
 import VideoHero from "@components/video-hero"
+import AllMessages from "@modules/all-messages"
 import AllBands from "@modules/all-bands"
 import Map from "@modules//map"
-import { band } from "@customTypes"
+import { message, band } from "@customTypes"
 
 // TODO: Add Video Lazyloading or no mobile Video
-// TODO: Add Privacy and Imprint
-const useBands = (): band[] => {
-  const data = useStaticQuery(graphql`
-    query BandQuery {
-      allBandsYaml(sort: { order: ASC, fields: title }) {
-        nodes {
-          title
-          genre
-          bandImage {
-            childImageSharp {
-              fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          }
-          startTime
-          endTime
-          stage
-          links {
-            iconName
-            href
-          }
-        }
-      }
-    }
-  `)
 
-  return data.allBandsYaml.nodes
-}
-
-const IndexPage = () => {
-  const allBands = useBands()
+const IndexPage = ({ data }) => {
+  const allBands: band[] = data.allBandsYaml.nodes
+  const allMessages: message[] = data.allMarkdownRemark.nodes.map(message => ({
+    ...message.frontmatter,
+    html: message.html,
+  }))
 
   return (
     <Layout>
       <SEO title="Home" />
       <VideoHero />
+      <AllMessages messages={allMessages} className="pb-0" />
       <AllBands bands={allBands} />
       <Map />
     </Layout>
   )
 }
+
+export const query = graphql`
+  query FrontPageQuery {
+    # All Bands
+    allBandsYaml(sort: { order: ASC, fields: title }) {
+      nodes {
+        title
+        genre
+        bandImage {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        startTime
+        endTime
+        stage
+        links {
+          iconName
+          href
+        }
+      }
+    }
+    # All Messages
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/src/messages/" } }
+    ) {
+      nodes {
+        frontmatter {
+          messageType
+          title
+        }
+        html
+      }
+    }
+  }
+`
 
 export default IndexPage

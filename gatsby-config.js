@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `fake-images`,
-        path: `${__dirname}/src/fake-data/images`,
+        name: `fake-data`,
+        path: `${__dirname}/src/fake-data`,
       },
     },
     {
@@ -32,6 +32,13 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-messages`,
+        path: `${__dirname}/src/messages`,
       },
     },
     `gatsby-transformer-sharp`,

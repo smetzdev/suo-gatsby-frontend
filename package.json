@@ -25,6 +25,7 @@
     "gatsby-transformer-sharp": "^2.4.6",
     "gatsby-transformer-yaml": "^2.4.6",
     "lodash": "^4.17.15",
+    "npm-run-all": "^4.1.5",
     "postcss-import": "^12.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -59,7 +60,8 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "gatsby-start": "gatsby develop",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "run-s clean build start-storybook",
+    "start-storybook": "NODE_ENV=production start-storybook -s ./public -p 6006",
     "storybook-build": "build-storybook"
   },
   "repository": {

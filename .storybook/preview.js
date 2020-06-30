@@ -2,7 +2,7 @@ import { addDecorator, addParameters } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 import { withA11y } from "@storybook/addon-a11y"
 import { customViewports, customBackgrounds } from "./global-parameters"
-import "../src/css/main.css"
+import "@styles/main.css"
 
 // Global Paramaters
 addParameters({

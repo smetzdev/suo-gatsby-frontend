@@ -17,8 +17,7 @@ const getlinkIconTitle = (bandTitle: string, iconName: string): string => {
 
 const BandCard: React.FC<band> = ({
   title,
-  bandImagePath,
-  bandImageFluid,
+  bandImage,
   genre,
   stage,
   startTime,
@@ -29,19 +28,11 @@ const BandCard: React.FC<band> = ({
     <article
       className={`relative max-w-lg inline-block rounded-md overflow-hidden bg-gray-800`}
     >
-      {bandImageFluid ? (
-        <Img
-          className="h-64 w-full object-cover object-center"
-          fluid={bandImageFluid.childImageSharp.fluid}
-          alt={title}
-        />
-      ) : (
-        <img
-          className="h-64 w-full object-cover object-center"
-          src={bandImagePath}
-          alt={title}
-        />
-      )}
+      <Img
+        className="h-64 w-full object-cover object-center"
+        fluid={bandImage.childImageSharp.fluid}
+        alt={title}
+      />
       <div className="p-5 text-lg">
         <h3 className="text-2xl md:text-3xl text-primary-400 leading-none mb-2">
           {title}

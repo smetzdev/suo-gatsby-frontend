@@ -1,5 +1,4 @@
-import { GatsbyGraphQLObjectType } from "gatsby"
-import GatsbyImage, { GatsbyImageProps } from "gatsby-image"
+import { GatsbyImageProps } from "gatsby-image"
 
 export type bandLinkIconName =
   | "instagram"
@@ -16,8 +15,7 @@ export interface bandLink {
 
 export interface band {
   title: string
-  bandImagePath?: string
-  bandImageFluid?: any
+  bandImage?: GatsbyImageProps
   genre: string
   startTime: string
   endTime: string

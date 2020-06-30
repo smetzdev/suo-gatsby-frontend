@@ -12,8 +12,8 @@
       "@designtokens": ["./cwo-designtokens"],
       "@styles/*": ["./src/css/*"],
       "@customTypes": ["./src/custom-types"],
-      "@fakeData": ["./fake-data"],
-      "@dummyImages/*": ["./fake-data/images/*"]
+      "@fakeData": ["./src/fake-data"],
+      "@dummyImages/*": ["./src/fake-data/images/*"]
     }
   }
 }

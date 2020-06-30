@@ -1,15 +1,11 @@
 const convert = require("color-convert")
 const { colors } = require("./cwo-designtokens")
-console.log(process.env.NO_PURGE)
 
 // Returns a shadow-color rgb-string, something like 0,0,1
 const shadowColor = convert.hex.rgb(colors.primary[600]).join(",")
 
 module.exports = {
-  purge: {
-    enable: !process.env.NO_PURGE,
-    content: ["./src/**/*.tsx"],
-  },
+  purge: process.env.NO_PURGE ? false : ["./src/**/*.tsx"],
   theme: {
     boxShadow: {
       xs: `0 0 0 1px rgba(${shadowColor}, 0.05)`,

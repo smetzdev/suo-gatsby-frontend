@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const Footer = () => {
   return (
     <footer className="bg-black py-8 font-display">
-      <div className="container text-center sm:text-left sm:flex justify-between">
+      <div className="container text-center sm:text-left sm:flex md:text-lg justify-between">
         <h5 className="mb-2 sm:mb-0">
           &copy; 2020{" "}
           <a href="https://cwo-ev.de">Celtic Warriors Otzenhausen e.V.</a>

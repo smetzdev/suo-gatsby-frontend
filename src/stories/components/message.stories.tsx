@@ -9,5 +9,9 @@ export default {
 
 export const Base = () => {
   const messageData = useFakeMessage()
-  return <Message {...messageData} />
+  return (
+    <div className="container">
+      <Message {...messageData} />
+    </div>
+  )
 }

@@ -11,7 +11,7 @@ const AllMessages: React.FC<allMessagesProps> = ({
   className = "",
 }) => {
   return (
-    <section className={`page-module space-y-4 ${className}`}>
+    <section className={`page-module container space-y-4 ${className}`}>
       {messages.map((message, key) => (
         <Message key={key} {...message} />
       ))}

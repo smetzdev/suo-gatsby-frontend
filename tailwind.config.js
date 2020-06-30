@@ -1,5 +1,6 @@
 const convert = require("color-convert")
 const { colors } = require("./cwo-designtokens")
+const defaultTheme = require("tailwindcss/defaultTheme")
 
 // Returns a shadow-color rgb-string, something like 0,0,1
 const shadowColor = convert.hex.rgb(colors.primary[600]).join(",")
@@ -27,6 +28,7 @@ module.exports = {
       colors: colors,
       fontFamily: {
         display: ["DaysLater", "Helvetica", "sans-serif"],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },

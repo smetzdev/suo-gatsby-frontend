@@ -4,7 +4,7 @@ import TimelapseVideoHigh from "../videos/timelapse-720p.mp4"
 const VideoHero = () => {
   return (
     <header className="relative h-64 bg-black lg:h-auto">
-      <div className="hidden lg-block">
+      <div className="hidden lg:block">
         <video
           autoPlay
           muted

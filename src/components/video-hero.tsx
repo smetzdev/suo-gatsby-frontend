@@ -4,13 +4,13 @@ import TimelapseVideoHigh from "../videos/timelapse-720p.mp4"
 const VideoHero = () => {
   return (
     <header className="relative h-64 bg-black lg:h-auto">
-      <video
+      {/* <video
         autoPlay
         muted
         loop
         className="hidden lg:block min-h-screen object-cover w-full object-center"
         src={TimelapseVideoHigh}
-      ></video>
+      ></video> */}
       <h1 className="text-4xl absolute-center text-center inline-block bg-grungy-primary bg-contain p-8 sm:text-6xl leading-none rounded-md max-w-lg">
         Schlacht um Otzenhausen
         <span className="hidden sm:block text-lg text-primary-400 mt-2">

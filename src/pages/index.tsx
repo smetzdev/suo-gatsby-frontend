@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, PageProps, GatsbyGraphQLObjectType } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
 import VideoHero from "@components/video-hero"

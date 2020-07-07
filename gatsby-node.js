@@ -6,6 +6,7 @@
 
 // You can delete this file if you're not using it
 const path = require("path")
+const fs = require("fs")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   // Destructure the createPage function from the actions object
@@ -45,4 +46,28 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: { slug: frontmatter.slug },
     })
   })
+}
+
+exports.onPostBuild = async ({ graphql, reporter }) => {
+  const bandsResult = await graphql(`
+    query AllBands {
+      allBandsYaml {
+        nodes {
+          title
+          stage
+          startTime
+          endTime
+          genre
+          bandImage {
+            publicURL
+          }
+        }
+      }
+    }
+  `)
+  if (bandsResult.errors) {
+    reporter.panicOnBuild('🚨  ERROR: Loading "onPostBuild" query')
+  }
+  const data = JSON.stringify(bandsResult.data.allBandsYaml.nodes)
+  fs.writeFileSync("./public/api.json", data)
 }

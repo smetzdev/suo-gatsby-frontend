@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Schlacht um Otzenhausen`,
+    date: "07.11.2020",
+    location: {
+      title: "Hunnenringhalle",
+      latitude: 49.605026,
+      longitude: 6.995291,
+    },
     description: `Das Indoor-Metalfestival im Saarland!`,
     author: `@r3sMetz`,
   },

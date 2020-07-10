@@ -1,8 +1,8 @@
 import React from "react"
-import Map from "@modules/map"
+import Map from "@components/map"
 
 export default {
-  title: "Modules/Map",
+  title: "Components/Map",
   component: Map,
 }
 

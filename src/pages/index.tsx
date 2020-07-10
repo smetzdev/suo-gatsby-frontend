@@ -5,7 +5,7 @@ import SEO from "@components/seo"
 import VideoHero from "@components/video-hero"
 import AllMessages from "@modules/all-messages"
 import AllBands from "@modules/all-bands"
-import Map from "@modules//map"
+import Direction from "@modules/direction"
 import { message, band } from "@customTypes"
 
 // TODO: Add Video Lazyloading or no mobile Video
@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
       <VideoHero />
       <AllMessages messages={allMessages} className="pb-0" />
       <AllBands bands={allBands} />
-      <Map />
+      <Direction />
     </Layout>
   )
 }

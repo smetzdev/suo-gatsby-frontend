@@ -6,6 +6,7 @@ const RunningOrder = () => {
     <a
       className="text-sm text-shadow tracking-widest font-display fixed top-0 right-0 mt-4 mr-4 z-40 lg:mt-6 lg:mr-6 lg:text-xl"
       target="_blank"
+      title="Download Running Order"
       rel="noreferrer noopener"
       href="/downloads/running-order.pdf"
     >

@@ -73,8 +73,12 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
     reporter.panicOnBuild('🚨  ERROR: Loading "onPostBuild" query')
   }
 
+  // Build Directory for downloads and API
+  if (!fs.existsSync("./public/api")) fs.mkdirSync("./public/api")
+  if (!fs.existsSync("./public/downloads")) fs.mkdirSync("./public/downloads")
+
   const data = JSON.stringify(allBands)
-  fs.writeFileSync("./public/api.json", data)
+  fs.writeFileSync("./public/api/bands.json", data)
 
   // Create Running Order PDF File
   const clubStageBands = allBands.filter(band => band.stage === "ClubStage")

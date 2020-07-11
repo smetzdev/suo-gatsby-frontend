@@ -9,7 +9,7 @@ const buildPDF = async (clubStageBands, mainStageBands) => {
       clubStageBands: clubStageBands,
       mainStageBands: mainStageBands,
     },
-    path: "./public/running-order.pdf",
+    path: "./public/downloads/running-order.pdf",
   }
 
   const response = await pdf.create(document, { format: "A4", border: "10mm" })

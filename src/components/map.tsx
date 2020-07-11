@@ -1,53 +1,15 @@
-import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import MapGL, { Marker } from "react-map-gl"
-import { Icon } from "@elements"
-
-const MB_TOKEN =
-  "pk.eyJ1IjoicmF1bTMiLCJhIjoiY2tjZ2M0aGZsMGU2bzJ4cXFra3V4eXR2byJ9.fvKF1OZIEg5pROjOdUENLA"
+import React from "react"
+import ResponsiveEmbed from "react-responsive-embed"
 
 const Map = () => {
-  // Get Static Data
-  const data = useStaticQuery(graphql`
-    query MapQuery {
-      site {
-        siteMetadata {
-          location {
-            latitude
-            longitude
-          }
-        }
-      }
-    }
-  `)
-  const { latitude, longitude } = data.site.siteMetadata.location
-
-  // Build Mapbox State
-  const [viewport, setViewport] = useState({
-    width: "100%",
-    height: "32rem",
-    latitude: latitude,
-    longitude: longitude,
-    zoom: 16,
-  })
-  const updateViewPort = viewport => setViewport(viewport)
-
   return (
-    <div>
-      <MapGL
-        {...viewport}
-        onViewportChange={updateViewPort}
-        mapboxApiAccessToken={MB_TOKEN}
-      >
-        <Marker latitude={latitude} longitude={longitude} offsetTop={-10}>
-          <Icon
-            name="sword"
-            title="Hier"
-            className="h-6 w-auto text-primary-500"
-          />
-        </Marker>
-      </MapGL>
-    </div>
+    <ResponsiveEmbed
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.611555484001!2d6.99315091599546!3d49.6050742793676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47959061a7d8853d%3A0x3c977a515cdc0c51!2sHunnenringhalle%20Otzenhausen!5e0!3m2!1sde!2sde!4v1594463333526!5m2!1sde!2sde"
+      width="600"
+      height="450"
+      frameBorder="0"
+      allowFullscreen
+    />
   )
 }
 

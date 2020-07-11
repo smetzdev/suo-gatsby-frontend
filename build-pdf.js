@@ -1,7 +1,7 @@
 var pdf = require("pdf-creator-node")
 const fs = require("fs")
 
-const buildPDF = (clubStageBands, mainStageBands) => {
+const buildPDF = async (clubStageBands, mainStageBands) => {
   const html = fs.readFileSync("pdf-template.html", "utf8")
   var document = {
     html: html,

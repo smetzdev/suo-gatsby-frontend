@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mate charest="utf-8" />
+    <title>Schlacht um Otzenhausen - Running Order</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      thead {
+        background: #333;
+        color: white;
+      }
+
+      td {
+        padding: 10px 5px;
+      }
+
+      tbody tr:nth-child(even) {
+        background: #ddd;
+      }
+
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SUO - Running Order</h1>
+    <h2>MainStage</h2>
+    <table>
+      <thead>
+        <tr>
+          <td>Uhrzeit</td>
+          <td>Band</td>
+          <td>Genre</td>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each mainStageBands}}
+        <tr>
+          <td>{{this.startTime}} - {{this.endTime}} Uhr</td>
+          <td>{{this.title}}</td>
+          <td>{{this.genre}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <h2>ClubStage</h2>
+    <table>
+      <thead>
+        <tr>
+          <td>Uhrzeit</td>
+          <td>Band</td>
+          <td>Genre</td>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each clubStageBands}}
+        <tr>
+          <td>{{this.startTime}} - {{this.endTime}} Uhr</td>
+          <td>{{this.title}}</td>
+          <td>{{this.genre}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </body>
+</html>

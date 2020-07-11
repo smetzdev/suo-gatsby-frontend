@@ -1,6 +1,7 @@
 title: Rising Glory
 bandImage: ./images/rising-glory.jpg
 genre: Heavy Rock n' Roll
+slot: 4
 startTime: "21:45"
 endTime: "22:30"
 stage: ClubStage

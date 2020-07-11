@@ -26,3 +26,7 @@
 .bg-grungy-primary {
   background-image: url("../images/grunge-primary.png");
 }
+
+.text-shadow {
+  text-shadow: 0px 0px 5px #ad1f1f;
+}

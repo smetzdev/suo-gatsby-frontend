@@ -7,6 +7,7 @@
 // You can delete this file if you're not using it
 const path = require("path")
 const fs = require("fs")
+const buildPDF = require("./build-pdf")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   // Destructure the createPage function from the actions object
@@ -49,9 +50,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 }
 
 exports.onPostBuild = async ({ graphql, reporter }) => {
+  // Create JSON File for static API
   const bandsResult = await graphql(`
     query AllBands {
-      allBandsYaml {
+      allBandsYaml(sort: { order: ASC, fields: slot }) {
         nodes {
           title
           stage
@@ -65,9 +67,21 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
       }
     }
   `)
+  const allBands = bandsResult.data.allBandsYaml.nodes
+
   if (bandsResult.errors) {
     reporter.panicOnBuild('🚨  ERROR: Loading "onPostBuild" query')
   }
-  const data = JSON.stringify(bandsResult.data.allBandsYaml.nodes)
-  fs.writeFileSync("./public/api.json", data)
+
+  // Build directories
+  if (!fs.existsSync("./public/api")) fs.mkdirSync("./public/api")
+  if (!fs.existsSync("./public/downloads")) fs.mkdirSync("./public/downloads")
+
+  const data = JSON.stringify(allBands)
+  fs.writeFileSync("./public/api/bands.json", data)
+
+  // Create Running Order PDF File
+  const clubStageBands = allBands.filter(band => band.stage === "ClubStage")
+  const mainStageBands = allBands.filter(band => band.stage === "MainStage")
+  buildPDF(clubStageBands, mainStageBands)
 }

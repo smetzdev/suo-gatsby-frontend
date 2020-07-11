@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
+import RunningOrder from "@modules/running-order"
 import VideoHero from "@components/video-hero"
 import AllMessages from "@modules/all-messages"
 import AllBands from "@modules/all-bands"
@@ -20,6 +21,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
+      <RunningOrder />
       <VideoHero />
       <AllMessages messages={allMessages} className="pb-0" />
       <AllBands bands={allBands} />

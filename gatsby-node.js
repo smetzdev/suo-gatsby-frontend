@@ -74,8 +74,8 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
   }
 
   // Build directories
-  if (!fs.existsSync("./public/api")) fs.mkdirSync("./public/api")
-  if (!fs.existsSync("./public/downloads")) fs.mkdirSync("./public/downloads")
+  fs.mkdirSync("./public/api")
+  fs.mkdirSync("./public/downloads")
 
   const data = JSON.stringify(allBands)
   fs.writeFileSync("./public/api/bands.json", data)

@@ -8,7 +8,7 @@ const RunningOrder = () => {
       target="_blank"
       title="Download Running Order"
       rel="noreferrer noopener"
-      href="/downloads/running-order.pdf"
+      href="/running-order.pdf"
     >
       <Icon
         name="download"

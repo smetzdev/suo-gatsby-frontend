@@ -9,7 +9,7 @@ const buildPDF = (clubStageBands, mainStageBands) => {
       clubStageBands: clubStageBands,
       mainStageBands: mainStageBands,
     },
-    path: "./public/downloads/running-order.pdf",
+    path: "./public/running-order.pdf",
   }
   pdf
     .create(document, { format: "A4", border: "10mm" })

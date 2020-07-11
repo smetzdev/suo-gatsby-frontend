@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* {allBands.length === 12 && <RunningOrder />} */}
+      {allBands.length === 12 && <RunningOrder />}
       <VideoHero />
       <AllMessages messages={allMessages} className="pb-0" />
       <AllBands bands={allBands} />

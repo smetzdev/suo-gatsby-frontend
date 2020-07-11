@@ -79,5 +79,6 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
   // Create Running Order PDF File
   const clubStageBands = allBands.filter(band => band.stage === "ClubStage")
   const mainStageBands = allBands.filter(band => band.stage === "MainStage")
-  await buildPDF(clubStageBands, mainStageBands)
+  const pdfResponse = await buildPDF(clubStageBands, mainStageBands)
+  return pdfResponse
 }

@@ -11,14 +11,10 @@ const buildPDF = async (clubStageBands, mainStageBands) => {
     },
     path: "./public/running-order.pdf",
   }
-  pdf
-    .create(document, { format: "A4", border: "10mm" })
-    .then(res => {
-      console.log(res)
-    })
-    .catch(error => {
-      console.error(error)
-    })
+
+  const response = await pdf.create(document, { format: "A4", border: "10mm" })
+
+  return response
 }
 
 module.exports = buildPDF

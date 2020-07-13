@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@tailwindcss/typography": "^0.1.2",
     "@types/faker": "^4.1.12",
     "@types/react-map-gl": "^5.2.4",
     "autoprefixer": "^9.8.4",

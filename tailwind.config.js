@@ -24,6 +24,35 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
+    typography: {
+      default: {
+        css: {
+          h1: {
+            color: colors.primary[400],
+            fontWeight: "800",
+          },
+          h2: {
+            color: colors.primary[400],
+            fontWeight: "700",
+          },
+          h3: {
+            color: colors.primary[400],
+            fontWeight: "600",
+          },
+          h4: {
+            color: colors.primary[400],
+            fontWeight: "600",
+          },
+          color: "#fff",
+          a: {
+            color: colors.primary[300],
+            "&:hover": {
+              color: colors.primary[500],
+            },
+          },
+        },
+      },
+    },
     extend: {
       colors: colors,
       fontFamily: {
@@ -33,5 +62,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }

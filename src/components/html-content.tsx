@@ -5,16 +5,13 @@ import { Link } from "gatsby"
 const HTMLContent: React.FC<{ content: string }> = ({ content }) => {
   return (
     <>
-      <section className="container">
-        <Link
-          to="/"
-          className="font-display text-4xl text-primary-300 underline py-5 inline-block"
-        >
+      <section className="container prose lg:prose-xl pt-4 pb-8">
+        <Link to="/" className="font-display">
           &larr;Zurück zur Startseite
         </Link>
       </section>
       <section
-        className="container html-content pb-12"
+        className="container prose lg:prose-xl pb-12"
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </>

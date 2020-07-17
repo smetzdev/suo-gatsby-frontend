@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import loadable from "@loadable/component"
 import { graphql } from "gatsby"
 import Layout from "@components/layout"
@@ -22,14 +23,19 @@ const IndexPage = ({ data }) => {
   }))
 
   return (
-    <Layout>
-      <SEO title="Home" />
-      {allBands.length === 12 && <RunningOrder />}
-      <VideoHero />
-      <AllMessages messages={allMessages} className="pb-0" />
-      <AllBands bands={allBands} />
-      <Direction />
-    </Layout>
+    <>
+      <Helmet>
+        <link rel="preconnect" href="https://maps.gstatic.com" />
+      </Helmet>
+      <Layout>
+        <SEO title="Home" />
+        {allBands.length === 12 && <RunningOrder />}
+        <VideoHero />
+        <AllMessages messages={allMessages} className="pb-0" />
+        <AllBands bands={allBands} />
+        <Direction />
+      </Layout>
+    </>
   )
 }
 

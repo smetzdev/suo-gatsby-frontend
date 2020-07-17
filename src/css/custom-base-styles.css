@@ -22,3 +22,12 @@ a {
 a:hover {
   @apply text-primary-400;
 }
+
+::-moz-selection {
+  @apply bg-primary-600 !important;
+  @apply text-white !important;
+}
+::selection {
+  @apply bg-primary-600 !important;
+  @apply text-white !important;
+}

@@ -9,6 +9,7 @@ const Map = () => {
       height="450"
       frameBorder="0"
       allowFullscreen
+      title="Anfahrt - Hunnenringhalle, Otzenhausen"
     />
   )
 }

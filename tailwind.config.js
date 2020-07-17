@@ -56,8 +56,8 @@ module.exports = {
     extend: {
       colors: colors,
       fontFamily: {
-        display: ["DaysLater", "Helvetica", "sans-serif"],
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        display: ["DaysLater", "Helvetica Neue", "sans-serif"],
+        /* sans: ["Inter", ...defaultTheme.fontFamily.sans], */
       },
     },
   },

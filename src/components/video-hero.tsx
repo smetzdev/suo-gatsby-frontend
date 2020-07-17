@@ -1,31 +1,13 @@
-import React, { useLayoutEffect, useState } from "react"
+import React from "react"
+import loadable from "@loadable/component"
 import { useStaticQuery, graphql } from "gatsby"
-import TimelapseVideoHigh from "../videos/timelapse-720p.mp4"
 import { parse, format } from "date-fns"
 
-const useVideoURL = () => {
-  const [videoURL, setVideoURL] = useState("")
-  // Check if video should be loaded and then set videoURL
-  const checkVideo = () => {
-    if (window.outerWidth > 1024 && videoURL === "") {
-      setVideoURL(TimelapseVideoHigh)
-    }
-  }
-
-  useLayoutEffect(() => {
-    if (typeof window === "undefined") return
-    // Check initially
-    checkVideo()
-
-    // Check on resize if video isnt set yet
-    if (videoURL === "") window.addEventListener("resize", checkVideo)
-  }, [])
-  return videoURL
-}
+// Lazy Load Video
+const Video = loadable(() => import("@components/video"))
 
 const VideoHero = () => {
-  // Get Static Data + VideoURL
-  const videoURL = useVideoURL()
+  // Get Static Data
   const data = useStaticQuery(graphql`
     query HeroQuery {
       site {
@@ -47,15 +29,8 @@ const VideoHero = () => {
   const bigDate = format(parsedDate, "dd MMMM yyyy")
 
   return (
-    <header className="relative h-64 bg-black lg:h-auto">
-      <video
-        autoPlay
-        muted
-        loop
-        className="hidden lg:block min-h-screen object-cover w-full object-center"
-        src={videoURL}
-      ></video>
-
+    <header className="relative h-64 bg-black lg:h-screen">
+      <Video />
       <h1 className="text-4xl absolute-center text-center inline-block bg-grungy-primary bg-contain p-8 sm:text-6xl leading-none rounded-md max-w-lg">
         {title}
         <span className="hidden sm:block text-lg text-primary-400 mt-2">

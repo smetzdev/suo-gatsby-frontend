@@ -1,4 +1,5 @@
 import React from "react"
+import loadable from "@loadable/component"
 import { graphql } from "gatsby"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
@@ -6,8 +7,10 @@ import RunningOrder from "@modules/running-order"
 import VideoHero from "@components/video-hero"
 import AllMessages from "@modules/all-messages"
 import AllBands from "@modules/all-bands"
-import Direction from "@modules/direction"
 import { message, band } from "@customTypes"
+
+// Lazy load map
+const Direction = loadable(() => import("@modules/direction"))
 
 // TODO: Add Video Lazyloading or no mobile Video
 
@@ -39,8 +42,8 @@ export const query = graphql`
         genre
         bandImage {
           childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(maxWidth: 390) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

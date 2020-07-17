@@ -5,8 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@loadable/component": "^5.13.1",
     "@tailwindcss/typography": "^0.1.2",
     "@types/faker": "^4.1.12",
+    "@types/loadable__component": "^5.13.0",
     "@types/react-map-gl": "^5.2.4",
     "autoprefixer": "^9.8.4",
     "babel-plugin-module-resolver": "^4.0.0",

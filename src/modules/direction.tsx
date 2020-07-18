@@ -1,16 +1,28 @@
-import React, { useState } from "react"
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { ModuleHeadline } from "@elements"
 import Map from "@components/map"
 
-const MB_TOKEN =
-  "pk.eyJ1IjoicmF1bTMiLCJhIjoiY2tjZ2M0aGZsMGU2bzJ4cXFra3V4eXR2byJ9.fvKF1OZIEg5pROjOdUENLA"
-
 const Direction = () => {
+  const data = useStaticQuery(graphql`
+    query Location {
+      site {
+        siteMetadata {
+          location {
+            googleRoutesLink
+            latitude
+            longitude
+          }
+        }
+      }
+    }
+  `)
+  const { location } = data.site.siteMetadata
   return (
     <section className="page-module bg-gray-800">
       <div className="container">
         <ModuleHeadline>Anfahrt</ModuleHeadline>
-        <Map />
+        <Map {...location} />
       </div>
     </section>
   )

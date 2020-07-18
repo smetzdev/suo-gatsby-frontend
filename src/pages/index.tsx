@@ -24,9 +24,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      <Helmet>
-        <link rel="preconnect" href="https://maps.gstatic.com" />
-      </Helmet>
       <Layout>
         <SEO title="Home" />
         {allBands.length === 12 && <RunningOrder />}

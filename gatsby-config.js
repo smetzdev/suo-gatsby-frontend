@@ -4,8 +4,10 @@ module.exports = {
     date: "07.11.2020",
     location: {
       title: "Hunnenringhalle",
-      latitude: 49.605026,
-      longitude: 6.995291,
+      latitude: 49.605207,
+      longitude: 6.995244,
+      googleRoutesLink:
+        "https://www.google.de/maps/dir//Hunnenringhalle+Otzenhausen,+Ringwallstra%C3%9Fe+8,+66620+Nonnweiler/@49.6050743,6.9931509,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47959061a7d8853d:0x3c977a515cdc0c51!2m2!1d6.9953396!2d49.6050743",
     },
     description: `Das Indoor-Metalfestival im Saarland!`,
     author: `@r3sMetz`,

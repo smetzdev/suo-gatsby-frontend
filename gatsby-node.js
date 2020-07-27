@@ -67,11 +67,12 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
       }
     }
   `)
-  const allBands = bandsResult.data.allBandsYaml.nodes
 
   if (bandsResult.errors) {
     reporter.panicOnBuild('🚨  ERROR: Loading "onPostBuild" query')
   }
+
+  const allBands = bandsResult.data.allBandsYaml.nodes
 
   // Build Directory for downloads and API
   if (!fs.existsSync("./public/api")) fs.mkdirSync("./public/api")

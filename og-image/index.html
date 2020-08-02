@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind-full.css" />   
+  </head>
+  <body class="mx-auto p-5 flex flex-col text-center items-stretch justify-start w-screen h-screen">    
+    <h1 class="text-5xl leading-none" id="title">TITLE</h1>
+    <h2 class="text-red-500 mb-12 text-3xl" id="description">DESCRIPTION</h2> 
+    <!-- Gets filled with bands dynamicly -->     
+    <ul id="bands" class="grid grid-cols-4 gap-4 text-2xl font-semibold"></ul>    
+    <p class="mt-auto text-2xl"><span class="text-red-800" id="date">DATE</span> @<span id="location">LOCATION</span></p>
+    <script>      
+    const params = new URLSearchParams(window.location.search)
+
+    // Set Title
+    const titleParam = params.get("title")
+    if(titleParam){
+      const titleElement = document.querySelector('#title')
+      titleElement.innerText = titleParam
+    }
+
+    // Set Description
+    const descriptionParam = params.get("description")
+    if(descriptionParam){
+      const descriptionElement = document.querySelector('#description')
+      descriptionElement.innerText = descriptionParam
+    }
+    
+    // Set Bands
+    const bandsParam = params.get("bands")
+    if(bandsParam){
+      const bands = bandsParam.split(",")
+      const bandList = document.querySelector('#bands')      
+      for(band of bands){
+        const newListElement = document.createElement("li")
+        newListElement.innerText = band
+        bandList.appendChild(newListElement)
+      }
+    }
+
+    // Set Date    
+    const dateParam = params.get("date")
+    if(dateParam){
+      const dateElement = document.querySelector('#date')
+      dateElement.innerText = dateParam
+    }
+
+    // Set Location    
+    const locationParam = params.get("location")
+    if(locationParam){
+      const locationElement = document.querySelector('#location')
+      locationElement.innerText = locationParam
+    }
+    </script>
+  </body>
+</html>
+
+<!-- Bands: Akando,Souldevourger,Dawn%20of%20Destiny,Nepomuc,Neorite,Scarlet%20Anger,EXA,Rising%20Glory,Final%20Fortune,Redgrin,Pestilence,Sober%20Truth

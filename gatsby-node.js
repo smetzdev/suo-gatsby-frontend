@@ -8,6 +8,7 @@
 const path = require("path")
 const fs = require("fs")
 const buildPDF = require("./build-pdf")
+const screenshot = require("./og-image/screenshot")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   // Destructure the createPage function from the actions object
@@ -51,8 +52,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 exports.onPostBuild = async ({ graphql, reporter }) => {
   // Create JSON File for static API
-  const bandsResult = await graphql(`
-    query AllBands {
+  const postBuildResult = await graphql(`
+    query postBuild {
       allBandsYaml(sort: { order: ASC, fields: slot }) {
         nodes {
           title
@@ -65,14 +66,32 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
           }
         }
       }
+      site {
+        siteMetadata {
+          date
+          description
+          location {
+            title
+          }
+          title
+        }
+      }
     }
   `)
 
-  if (bandsResult.errors) {
+  if (postBuildResult.errors) {
     reporter.panicOnBuild('🚨  ERROR: Loading "onPostBuild" query')
   }
 
-  const allBands = bandsResult.data.allBandsYaml.nodes
+  // Destructure Result
+  const allBands = postBuildResult.data.allBandsYaml.nodes
+  const {
+    date,
+    description,
+    title,
+    location: locationObject,
+  } = postBuildResult.data.site.siteMetadata
+  const location = locationObject.title
 
   // Build Directory for downloads and API
   if (!fs.existsSync("./public/api")) fs.mkdirSync("./public/api")
@@ -84,6 +103,9 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
   // Create Running Order PDF File
   const clubStageBands = allBands.filter(band => band.stage === "ClubStage")
   const mainStageBands = allBands.filter(band => band.stage === "MainStage")
-  const pdfResponse = await buildPDF(clubStageBands, mainStageBands)
-  return pdfResponse
+  await buildPDF(clubStageBands, mainStageBands)
+
+  // Create Screenshot
+  const bandNameArray = allBands.map(band => band.title)
+  return await screenshot(bandNameArray, date, location, title, description)
 }

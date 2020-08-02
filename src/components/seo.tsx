@@ -57,7 +57,7 @@ const SEO: React.FC<seoProps> = ({
         },
         {
           property: `og:image`,
-          content: "/suo-preview.jpg",
+          content: "/suo-preview.png",
         },
         {
           property: `og:image:width`,
@@ -85,7 +85,7 @@ const SEO: React.FC<seoProps> = ({
         },
         {
           name: `twitter:image`,
-          content: "/suo-preview.jpg",
+          content: "/suo-preview.png",
         },
       ].concat(meta)}
     />

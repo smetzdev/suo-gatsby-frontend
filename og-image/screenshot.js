@@ -20,7 +20,7 @@ const screenshot = async (
   const page = await browser.newPage()
   page.setViewport({ width: 1024, height: 512 })
   await page.goto(`file://${__dirname}/index.html?${searchParams.toString()}`)
-  await page.screenshot({ path: "./public/suo-preview.jpg" })
+  await page.screenshot({ path: "./public/suo-preview.png" })
 
   await browser.close()
 

@@ -56,6 +56,10 @@ const SEO: React.FC<seoProps> = ({
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: "/suo-preview.jpg",
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -70,10 +74,6 @@ const SEO: React.FC<seoProps> = ({
         {
           name: `twitter:description`,
           content: metaDescription,
-        },
-        {
-          name: `og:image`,
-          content: "/suo-preview.jpg",
         },
       ].concat(meta)}
     />

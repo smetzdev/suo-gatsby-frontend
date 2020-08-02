@@ -60,8 +60,16 @@ const SEO: React.FC<seoProps> = ({
           content: "/suo-preview.jpg",
         },
         {
+          property: `og:image:width`,
+          content: 1024,
+        },
+        {
+          property: `og:image:height`,
+          content: 512,
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,

@@ -23,6 +23,7 @@ const SEO: React.FC<seoProps> = ({
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -30,6 +31,7 @@ const SEO: React.FC<seoProps> = ({
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const siteUrl = site.siteMetadata.siteUrl
 
   return (
     <Helmet
@@ -57,7 +59,7 @@ const SEO: React.FC<seoProps> = ({
         },
         {
           property: `og:image`,
-          content: "/suo-preview.png",
+          content: `${siteUrl}/suo-preview.png`,
         },
         {
           property: `og:image:width`,
@@ -77,7 +79,7 @@ const SEO: React.FC<seoProps> = ({
         },
         {
           name: `twitter:title`,
-          content: `${title} | ${site.siteMetadata.title}`,
+          content: title,
         },
         {
           name: `twitter:description`,
@@ -85,7 +87,7 @@ const SEO: React.FC<seoProps> = ({
         },
         {
           name: `twitter:image`,
-          content: "/suo-preview.png",
+          content: `${siteUrl}/suo-preview.png`,
         },
       ].concat(meta)}
     />

@@ -2,6 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Schlacht um Otzenhausen`,
     date: "07.11.2020",
+    siteUrl:
+      process.env === "production"
+        ? "https://suo-festival.de"
+        : "http://localhost:8000",
     location: {
       title: "Hunnenringhalle",
       latitude: 49.605207,

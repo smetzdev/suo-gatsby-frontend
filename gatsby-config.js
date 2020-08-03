@@ -3,7 +3,7 @@ module.exports = {
     title: `Schlacht um Otzenhausen`,
     date: "07.11.2020",
     siteUrl:
-      process.env === "production"
+      process.env.NODE_ENV === "production"
         ? "https://suo-festival.de"
         : "http://localhost:8000",
     location: {

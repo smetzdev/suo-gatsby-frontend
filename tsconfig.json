@@ -5,7 +5,6 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@elements": ["./src/elements"],
       "@components/*": ["./src/components/*"],
       "@modules/*": ["./src/modules/*"],
       "@images/*": ["./src/images/*"],

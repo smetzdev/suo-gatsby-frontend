@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `@smetzdev/gatsby-theme-cwo`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

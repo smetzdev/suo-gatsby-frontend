@@ -1,9 +1,13 @@
 const convert = require("color-convert")
-const { colors } = require("./cwo-designtokens")
-const defaultTheme = require("tailwindcss/defaultTheme")
+const {
+  cwoDesigntokens,
+  cwoTailwindConfig,
+} = require("@smetzdev/gatsby-theme-cwo")
 
 // Returns a shadow-color rgb-string, something like 0,0,1
-const shadowColor = convert.hex.rgb(colors.primary[600]).join(",")
+const shadowColor = convert.hex
+  .rgb(cwoDesigntokens.colors.primary[600])
+  .join(",")
 
 module.exports = {
   purge: process.env.NO_PURGE ? false : ["./src/**/*.tsx"],
@@ -28,48 +32,32 @@ module.exports = {
       default: {
         css: {
           h1: {
-            color: colors.primary[400],
+            color: cwoDesigntokens.colors.primary[400],
             fontWeight: "800",
           },
           h2: {
-            color: colors.primary[400],
+            color: cwoDesigntokens.colors.primary[400],
             fontWeight: "700",
           },
           h3: {
-            color: colors.primary[400],
+            color: cwoDesigntokens.colors.primary[400],
             fontWeight: "600",
           },
           h4: {
-            color: colors.primary[400],
+            color: cwoDesigntokens.colors.primary[400],
             fontWeight: "600",
           },
           color: "#fff",
           a: {
-            color: colors.primary[300],
+            color: cwoDesigntokens.colors.primary[300],
             "&:hover": {
-              color: colors.primary[500],
+              color: cwoDesigntokens.colors.primary[500],
             },
           },
         },
       },
     },
-    extend: {
-      colors: colors,
-      fontFamily: {
-        display: ["DaysLater", "Helvetica Neue", "sans-serif"],
-        /* sans: ["Inter", ...defaultTheme.fontFamily.sans], */
-      },
-      spacing: {
-        "72": "18rem",
-        "80": "20rem",
-        "88": "22rem",
-        "96": "24rem",
-        "104": "26rem",
-        "112": "28rem",
-        "120": "30rem",
-        "128": "32rem",
-      },
-    },
+    extend: cwoTailwindConfig.theme.extend,
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],

@@ -1,5 +1,5 @@
 import React from "react"
-import { Icon } from "@elements"
+import { CWOIcon } from "@smetzdev/gatsby-theme-cwo/elements"
 
 const RunningOrder = () => {
   return (
@@ -10,7 +10,7 @@ const RunningOrder = () => {
       rel="noreferrer noopener"
       href="/downloads/running-order.pdf"
     >
-      <Icon
+      <CWOIcon
         name="download"
         className="h-4 w-auto inline-block mr-1 transform -translate-y-1 lg:h-6 lg:mr-2"
       />

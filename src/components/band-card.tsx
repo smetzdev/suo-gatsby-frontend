@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Icon } from "@elements"
+import { CWOIcon } from "@smetzdev/gatsby-theme-cwo/elements"
 import { band } from "@customTypes"
 
 const getlinkIconTitle = (bandTitle: string, iconName: string): string => {
@@ -38,14 +38,14 @@ const BandCard: React.FC<band> = ({
           {title}
         </h3>
         <p>
-          <Icon
+          <CWOIcon
             name="genre"
             className="h-4 w-auto inline-block mr-2 text-gray-600"
           />
           {genre}
         </p>
         <p>
-          <Icon
+          <CWOIcon
             name="clock"
             className="h-4 w-auto inline-block mr-2 text-gray-600"
           />
@@ -58,7 +58,7 @@ const BandCard: React.FC<band> = ({
               {links.map((link, key) => (
                 <li key={key}>
                   <a target="_blank" rel="noreferrer noopener" href={link.href}>
-                    <Icon
+                    <CWOIcon
                       className="h-6 w-auto"
                       name={link.iconName}
                       title={getlinkIconTitle(title, link.iconName)}

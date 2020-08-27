@@ -11,7 +11,7 @@ export const Grunged: React.FC<grungedProps> = ({
   children,
 }) => {
   const data = useStaticQuery(graphql`
-    query grungImages {
+    query oldGrunge {
       allFile(filter: { name: { regex: "/grunge-/" }, ext: { eq: ".png" } }) {
         nodes {
           name

@@ -2438,9 +2438,9 @@
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
 "@smetzdev/gatsby-theme-cwo@^1.0.1":
-  version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@smetzdev/gatsby-theme-cwo/1.0.1/e88979a442f758d005e15e2ba0d06228a3e12d698bbeb59fe6d4f45351288d0d#d73d22c1c09e40a0f89847c5146d4f2084a8240d"
-  integrity sha512-QwKePyOdfwRNviOBuCF3Vi8B81EOxZCoZDgo3pMJ5d1DCbtBMf9tDm1sH9UcUTNdoX44kqYy1+inMe5pZoJj0g==
+  version "1.2.1"
+  resolved "https://npm.pkg.github.com/download/@smetzdev/gatsby-theme-cwo/1.2.1/0028aa6ed809278abafc376ea8ad21b6a155809a148ac60c3ccd2c560232dfa8#3f72f72068f776d031d5342cea8395fff957a543"
+  integrity sha512-8gkf+nFzsbo2wU51H4rPNsAFfqnHBUcAGy/6ttgWHRFNwT+B1v3nSVtr5AIy5cHYA4VVIL8+KKwDgANf5zfzCQ==
 
 "@storybook/addon-a11y@^5.3.18":
   version "5.3.19"

@@ -1,6 +1,6 @@
 import React from "react"
 import loadable from "@loadable/component"
-import { Grunged } from "@elements"
+import { CWOGrunged } from "@smetzdev/gatsby-theme-cwo/elements"
 import { useStaticQuery, graphql } from "gatsby"
 import { parse, format } from "date-fns"
 
@@ -34,7 +34,7 @@ const VideoHero = () => {
       <Video />
       <h1 className="text-4xl absolute-center text-center inline-block p-8 sm:text-6xl leading-none rounded-md max-w-lg">
         <span className="relative">
-          <Grunged>{title}</Grunged>
+          <CWOGrunged>{title}</CWOGrunged>
         </span>
         <span className="hidden sm:block text-lg text-primary-400 mt-2">
           {bigDate} | {location.title}

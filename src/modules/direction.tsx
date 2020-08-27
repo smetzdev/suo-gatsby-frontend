@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { ModuleHeadline } from "@elements"
+import { CWOModuleHeadline } from "@smetzdev/gatsby-theme-cwo/elements"
 import Map from "@components/map"
 
 const Direction = () => {
@@ -19,9 +19,9 @@ const Direction = () => {
   `)
   const { location } = data.site.siteMetadata
   return (
-    <section className="page-module bg-gray-800">
+    <section className="cwo-page-module bg-gray-800">
       <div className="container">
-        <ModuleHeadline>Anfahrt</ModuleHeadline>
+        <CWOModuleHeadline>Anfahrt</CWOModuleHeadline>
         <Map {...location} />
       </div>
     </section>

@@ -1,12 +1,12 @@
 import React from "react"
-import { Icon } from "@elements"
+import { CWOIcon } from "@smetzdev/gatsby-theme-cwo/elements"
 import { message } from "@customTypes"
 
 const Message: React.FC<message> = ({ title, messageType, html }) => {
   return (
     <article className="bg-gray-700 p-5 border-4 border-gray-600 rounded-md">
       <header className="flex justify-start items-center mb-2">
-        <Icon
+        <CWOIcon
           name={messageType}
           className="h-8 text-gray-300 w-auto inline-block mr-2"
         />

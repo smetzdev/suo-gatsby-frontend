@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@loadable/component": "^5.13.1",
+    "@smetzdev/gatsby-theme-cwo": "^1.0.1",
     "@tailwindcss/typography": "^0.1.2",
     "@types/faker": "^4.1.12",
     "@types/loadable__component": "^5.13.0",
@@ -63,7 +64,7 @@
   "license": "MIT",
   "scripts": {
     "build": "run-s build:tailwind-og-image build:gatsby",
-    "build:gatsby": "gatsby build",    
+    "build:gatsby": "gatsby build",
     "build:tailwind-og-image": "NO_PURGE=true postcss ./src/css/main.css -o ./og-image/tailwind-full.css",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",

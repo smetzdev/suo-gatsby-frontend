@@ -3,6 +3,4 @@ title: Corona Info
 messageType: info
 ---
 
-Nach aktuellem Stand wird die Schlacht um Otzenhausen wie geplant, am **07.11.2020**, stattfinden.
-
-Sobald sich etwas ändert erfährst du es hier!
+Leider sehen wir uns aufgrund der aktuellen dazu Lage gezwungen die Schlacht um Otzenhausen abzusagen, wir werden versuchen alle Bands für das nächste Jahr zu buchen und die Schlacht **06.11.2021** nachzuholen.

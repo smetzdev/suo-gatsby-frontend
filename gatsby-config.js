@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Schlacht um Otzenhausen`,
+    title: `*Abgesagt* Schlacht um Otzenhausen`,
     date: "07.11.2020",
     siteUrl:
       process.env.NODE_ENV === "production"

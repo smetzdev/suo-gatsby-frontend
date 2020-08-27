@@ -10,7 +10,9 @@ const shadowColor = convert.hex
   .join(",")
 
 module.exports = {
-  purge: process.env.NO_PURGE ? false : ["./src/**/*.tsx"],
+  purge: process.env.NO_PURGE
+    ? false
+    : ["./node_modules/@smetzdev/gatsby-theme-cwo/**/*.tsx", "./src/**/*.tsx"],
   theme: {
     boxShadow: {
       xs: `0 0 0 1px rgba(${shadowColor}, 0.05)`,

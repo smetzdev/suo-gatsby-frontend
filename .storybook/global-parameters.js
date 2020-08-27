@@ -1,4 +1,6 @@
-import { colors } from "../cwo-designtokens"
+import { cwoDesigntokens } from "@smetzdev/gatsby-theme-cwo"
+
+const { colors } = cwoDesigntokens
 
 export const customBackgrounds = [
   {

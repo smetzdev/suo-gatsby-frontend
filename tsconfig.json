@@ -9,7 +9,6 @@
       "@components/*": ["./src/components/*"],
       "@modules/*": ["./src/modules/*"],
       "@images/*": ["./src/images/*"],
-      "@designtokens": ["./cwo-designtokens"],
       "@styles/*": ["./src/css/*"],
       "@customTypes": ["./src/custom-types"],
       "@fakeData": ["./src/fake-data"],

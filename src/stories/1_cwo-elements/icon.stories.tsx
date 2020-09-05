@@ -1,5 +1,5 @@
 import React from "react"
-import { CWOIcon, iconData } from "@smetzdev/gatsby-theme-cwo"
+import { CWOIcon, iconData } from "@smetzdev/gatsby-theme-cwo/elements"
 import { withPadding } from "../custom-decorators"
 
 const allIconNames = Object.keys(iconData)

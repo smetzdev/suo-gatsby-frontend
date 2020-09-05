@@ -1,32 +1,20 @@
-import { useStaticQuery, graphql } from "gatsby"
-import { sample as getRandomElement } from "lodash"
+import { createFakeHTML } from "./helper"
+import faker from "faker"
 import { message } from "@customTypes"
 
-const fakeMessages = useStaticQuery(graphql`
-  query fakeMessages {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/fake-data/" } }) {
-      nodes {
-        frontmatter {
-          messageType
-          title
-        }
-        html
-      }
-    }
-  }
-`)
-
 export const useFakeMessage = (): message => {
-  const randomMessage = getRandomElement(fakeMessages.allMarkdownRemark.nodes)
   return {
-    ...randomMessage.frontmatter,
-    html: randomMessage.html,
+    title: faker.random.words(),
+    messageType: "info",
+    html: createFakeHTML(),
   }
 }
 
 export const useFakeMessages = (): message[] => {
-  return fakeMessages.allMarkdownRemark.nodes.map(message => ({
-    ...message.frontmatter,
-    html: message.html,
+  const randomNumber = faker.random.number({ min: 2, max: 5 })
+  return Array.from({ length: randomNumber }, () => ({
+    title: faker.random.words(),
+    messageType: "info",
+    html: createFakeHTML(),
   }))
 }

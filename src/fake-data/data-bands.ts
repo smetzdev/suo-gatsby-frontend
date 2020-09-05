@@ -1,6 +1,5 @@
 import faker from "faker"
-import { useStaticQuery, graphql } from "gatsby"
-import { sample as getRandomElement } from "lodash"
+import { fakeGatsbyFluidImage } from "./helper"
 import { band } from "@customTypes"
 
 const allStages = ["MainStage", "ClubStage"]
@@ -44,11 +43,11 @@ const possibleGenresArray = [
 ]
 
 // External
-export const createfakeBand = dummyImageArray => ({
+export const createfakeBand = () => ({
   title: faker.commerce.productName(),
-  genre: getRandomElement(possibleGenresArray),
-  stage: getRandomElement(allStages),
-  bandImage: getRandomElement(dummyImageArray),
+  genre: faker.random.arrayElement(possibleGenresArray),
+  stage: faker.random.arrayElement(allStages),
+  bandImage: fakeGatsbyFluidImage({ width: 500, height: 320 }),
   startTime: "19:39 Uhr",
   endTime: "19:45 Uhr",
   // Return the n-first elements of allLinkskArray
@@ -63,33 +62,11 @@ export const createfakeBand = dummyImageArray => ({
   })(),
 })
 
-// Query which delivers all dummy-band-images (ChildImageSharp)
-const imageData = useStaticQuery(graphql`
-  query AllDummyBandImages {
-    allFile(
-      filter: {
-        absolutePath: { regex: "/fake-data/" }
-        name: { regex: "/band-image/" }
-      }
-    ) {
-      nodes {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  }
-`)
-
 export const useFakeBand = (): band => {
-  return createfakeBand(imageData.allFile.nodes)
+  return createfakeBand()
 }
 
 export const useFakeBands = (min = 1, max = 12): band[] => {
   const amountOfBands = faker.random.number({ min, max })
-  return Array.from({ length: amountOfBands }, () =>
-    createfakeBand(imageData.allFile.nodes)
-  )
+  return Array.from({ length: amountOfBands }, () => createfakeBand())
 }

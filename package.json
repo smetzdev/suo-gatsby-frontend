@@ -56,7 +56,7 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
-    "prettier": "2.0.4"
+    "prettier": "^2.0.4"
   },
   "keywords": [
     "gatsby"
@@ -65,7 +65,7 @@
   "scripts": {
     "build:tailwind-og-image": "NO_PURGE=true postcss ./src/css/main.css -o ./og-image/tailwind-unpurged.css",
     "prebuild": "npm run build:tailwind-og-image",
-    "build": "gatsby build",    
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
@@ -74,8 +74,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "gatsby-start": "gatsby develop",
     "prestorybook": "NO_PURGE=true run-s clean build",
-    "storybook": "NODE_ENV=production NO_PURGE=true start-storybook -s ./public -p 6006", 
-    "prestorybook-build": "run-s clean build",   
+    "storybook": "NODE_ENV=production NO_PURGE=true start-storybook -s ./public -p 6006",
+    "prestorybook-build": "run-s clean build",
     "storybook-build": "build-storybook"
   },
   "repository": {

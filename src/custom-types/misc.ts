@@ -4,6 +4,6 @@ export interface withClassName {
 
 export interface message {
   title: string
-  messageType: "info" | "warning"
+  messageType: "info"
   html: string
 }

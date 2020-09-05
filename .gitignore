@@ -69,4 +69,4 @@ yarn-error.log
 .yarn-integrity
 
 # MISC
-./og-image/tailwind-full.css
+og-image/tailwind-unpurged.css

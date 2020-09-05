@@ -10,6 +10,10 @@ const shadowColor = convert.hex
   .join(",")
 
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   purge: process.env.NO_PURGE
     ? false
     : ["./node_modules/@smetzdev/gatsby-theme-cwo/**/*.tsx", "./src/**/*.tsx"],

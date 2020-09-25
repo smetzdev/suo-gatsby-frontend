@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="fonts.css"/>
     <link rel="stylesheet" href="tailwind-unpurged.css" />   
   </head>
-  <body class="mx-auto p-5 flex flex-col text-center items-stretch justify-start w-screen h-screen">    
-    <h1 class="text-5xl leading-none" id="title">TITLE</h1>
-    <h2 class="text-red-500 mb-12 text-3xl" id="description">DESCRIPTION</h2> 
+  <body class="flex flex-col items-stretch justify-start w-screen h-screen p-5 mx-auto text-center">    
+    <h1 class="text-5xl leading-none font-display" id="title">TITLE</h1>
+    <h2 class="mb-12 text-3xl text-red-500" id="description">DESCRIPTION</h2> 
     <!-- Gets filled with bands dynamicly -->     
     <ul id="bands" class="grid grid-cols-4 gap-4 text-2xl font-semibold"></ul>    
     <p class="mt-auto text-2xl"><span class="text-red-800" id="date">DATE</span> @<span id="location">LOCATION</span></p>

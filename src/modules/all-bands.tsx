@@ -1,7 +1,9 @@
 import React from "react"
 import BandCard from "@components/band-card"
-import { CWOModuleHeadline } from "@smetzdev/gatsby-theme-cwo/elements"
+import { CWOModuleHeadline } from "@elements"
 import { band } from "@customTypes"
+import { PageModule } from "@elements"
+import "twin.macro"
 
 interface allBandsProps {
   bands: band[]
@@ -9,14 +11,14 @@ interface allBandsProps {
 
 const AllBands: React.FC<allBandsProps> = ({ bands }) => {
   return (
-    <section className="cwo-page-module container">
+    <PageModule tw="container">
       <CWOModuleHeadline>Bands</CWOModuleHeadline>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 items-stretch">
+      <div tw="grid items-stretch gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {bands.map((band, key) => (
           <BandCard key={key} {...band} />
         ))}
       </div>
-    </section>
+    </PageModule>
   )
 }
 

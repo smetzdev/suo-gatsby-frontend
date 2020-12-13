@@ -1,8 +1,0 @@
-/* Using postcss-import */
-@import "tailwindcss/base";
-@import "@smetzdev/gatsby-theme-cwo/css/cwo-base-styles.css";
-@import "tailwindcss/components";
-@import "@smetzdev/gatsby-theme-cwo/css/components/cwo-module-headline.css";
-@import "@smetzdev/gatsby-theme-cwo/css/components/cwo-page-module.css";
-@import "tailwindcss/utilities";
-@import "./custom-utilities.css";

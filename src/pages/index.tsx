@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" />
         {allBands.length === 12 && <RunningOrder />}
         <VideoHero />
-        <AllMessages messages={allMessages} className="pb-0" />
+        <AllMessages messages={allMessages} />
         <AllBands bands={allBands} />
         <Direction />
       </Layout>

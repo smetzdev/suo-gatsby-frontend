@@ -1,6 +1,7 @@
 import React from "react"
-import { CWOIcon, iconData } from "@smetzdev/gatsby-theme-cwo/elements"
+import { CWOIcon, iconData } from "@elements"
 import { withPadding } from "../custom-decorators"
+import tw from "twin.macro"
 
 const allIconNames = Object.keys(iconData)
 
@@ -11,10 +12,10 @@ export default {
 }
 
 export const AllIcons = () => (
-  <div className="grid grid-cols-4 gap-4">
+  <div tw="grid grid-cols-4 gap-4">
     {allIconNames.map(name => (
-      <article className="p-5 flex flex-col rounded-md bg-gray-800 items-center">
-        <CWOIcon className="h-16 w-auto" name={name} />
+      <article tw="flex flex-col items-center p-5 bg-gray-800 rounded-md">
+        <CWOIcon css={tw`w-auto h-16`} name={name} />
         <p>{name}</p>
       </article>
     ))}

@@ -3,6 +3,7 @@ import ReactMapGL from "react-map-gl"
 import Marker from "./_marker"
 import MapUI from "./_map-ui"
 import NavigationLink from "./_navigation-link"
+import "twin.macro"
 
 // Mapbox Access Token
 const MB_TOKEN =
@@ -34,7 +35,7 @@ const Map: React.FC<mapProps> = ({ latitude, longitude, googleRoutesLink }) => {
   }, [])
 
   return (
-    <div className="w-full h-80 md:h-96 lg:h-128 rounded-lg overflow-hidden">
+    <div tw="w-full overflow-hidden rounded-lg h-80 md:h-96 lg:h-128">
       <ReactMapGL
         {...viewport}
         {...settings}

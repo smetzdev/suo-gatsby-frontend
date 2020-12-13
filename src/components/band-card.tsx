@@ -1,7 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
-import { CWOIcon } from "@smetzdev/gatsby-theme-cwo/elements"
+import { CWOIcon } from "@elements"
 import { band } from "@customTypes"
+import "twin.macro"
 
 const getlinkIconTitle = (bandTitle: string, iconName: string): string => {
   const iconTitleMap = {
@@ -25,41 +26,39 @@ const BandCard: React.FC<band> = ({
   links,
 }) => {
   return (
-    <article
-      className={`relative max-w-lg inline-block rounded-md overflow-hidden bg-gray-800`}
-    >
+    <article tw="relative max-w-lg inline-block rounded-md overflow-hidden bg-gray-800">
       <Img
-        className="h-64 w-full object-cover object-center"
+        tw="object-cover object-center w-full h-64"
         fluid={bandImage.childImageSharp.fluid}
         alt={title}
       />
-      <div className="p-5 text-lg">
-        <h3 className="text-2xl md:text-3xl text-primary-400 leading-none mb-2">
+      <div tw="p-5 text-lg">
+        <h3 tw="mb-2 text-2xl leading-none md:text-3xl text-primary-400">
           {title}
         </h3>
         <p>
           <CWOIcon
             name="genre"
-            className="h-4 w-auto inline-block mr-2 text-gray-600"
+            tw="inline-block w-auto h-4 mr-2 text-gray-600"
           />
           {genre}
         </p>
         <p>
           <CWOIcon
             name="clock"
-            className="h-4 w-auto inline-block mr-2 text-gray-600"
+            tw="inline-block w-auto h-4 mr-2 text-gray-600"
           />
           {startTime} – {endTime} Uhr / {stage}
         </p>
         {links.length > 0 && (
           <>
-            <hr className="mt-6 mb-4 border-gray-600" />
-            <ul className="flex space-x-3 items-center text-gray-300">
+            <hr tw="mt-6 mb-4 border-gray-600" />
+            <ul tw="flex items-center space-x-3 text-gray-300">
               {links.map((link, key) => (
                 <li key={key}>
                   <a target="_blank" rel="noreferrer noopener" href={link.href}>
                     <CWOIcon
-                      className="h-6 w-auto"
+                      tw="w-auto h-6"
                       name={link.iconName}
                       title={getlinkIconTitle(title, link.iconName)}
                     />

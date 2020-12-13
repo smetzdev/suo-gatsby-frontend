@@ -1,21 +1,20 @@
 import React from "react"
 import Message from "@components/message"
-import { message, withClassName } from "@customTypes"
+import { message } from "@customTypes"
+import { PageModule } from "@elements"
+import "twin.macro"
 
-interface allMessagesProps extends withClassName {
+interface allMessagesProps {
   messages: message[]
 }
 
-const AllMessages: React.FC<allMessagesProps> = ({
-  messages,
-  className = "",
-}) => {
+const AllMessages: React.FC<allMessagesProps> = ({ messages }) => {
   return (
-    <section className={`cwo-page-module container space-y-4 ${className}`}>
+    <PageModule tw="container max-w-screen-lg! space-y-4 pb-0!">
       {messages.map((message, key) => (
         <Message key={key} {...message} />
       ))}
-    </section>
+    </PageModule>
   )
 }
 

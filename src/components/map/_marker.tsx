@@ -1,6 +1,7 @@
 import React from "react"
 import { Marker as ReactMapGLMarker } from "react-map-gl"
-import { CWOIcon } from "@smetzdev/gatsby-theme-cwo/elements"
+import { CWOIcon } from "@elements"
+import "twin.macro"
 
 interface markerProps {
   latitude: number
@@ -15,7 +16,7 @@ const Marker: React.FC<markerProps> = ({ latitude, longitude }) => {
       latitude={latitude}
       longitude={longitude}
     >
-      <CWOIcon name="pin" className="h-6 w-auto text-primary-600" />
+      <CWOIcon name="pin" tw="h-6 w-auto text-primary-600" />
     </ReactMapGLMarker>
   )
 }

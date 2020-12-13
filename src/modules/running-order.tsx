@@ -1,10 +1,10 @@
 import React from "react"
-import { CWOIcon } from "@smetzdev/gatsby-theme-cwo/elements"
+import { CWOIcon } from "@elements"
+import tw, { styled, theme } from "twin.macro"
 
 const RunningOrder = () => {
   return (
-    <a
-      className="text-sm text-shadow tracking-widest font-display fixed top-0 right-0 mt-4 mr-4 z-40 lg:mt-6 lg:mr-6 lg:text-xl"
+    <StyledRunningOrder
       target="_blank"
       title="Download Running Order"
       rel="noreferrer noopener"
@@ -12,11 +12,16 @@ const RunningOrder = () => {
     >
       <CWOIcon
         name="download"
-        className="h-4 w-auto inline-block mr-1 transform -translate-y-1 lg:h-6 lg:mr-2"
+        css={tw`inline-block w-auto h-4 mr-1 transform -translate-y-1 lg:h-6 lg:mr-2`}
       />
       Running Order
-    </a>
+    </StyledRunningOrder>
   )
 }
+
+const StyledRunningOrder = styled.a`
+  ${tw`fixed top-0 right-0 z-40 mt-4 mr-4 text-sm tracking-widest font-display lg:mt-6 lg:mr-6 lg:text-xl`}
+  text-shadow: 0px 0px 5px ${theme`colors.primary.500`};
+`
 
 export default RunningOrder

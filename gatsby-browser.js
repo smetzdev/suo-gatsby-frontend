@@ -5,4 +5,4 @@
  */
 
 // You can delete this file if you're not using it
-import "@styles/main.css"
+import "./src/css/font-faces.css"

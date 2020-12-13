@@ -1,4 +1,5 @@
 import React from "react"
+import "twin.macro"
 
 interface withContactHint {
   withContactHint?: boolean
@@ -6,18 +7,18 @@ interface withContactHint {
 
 const TBABand: React.FC<withContactHint> = ({ withContactHint }) => {
   return (
-    <article className="border border-gray-700 border-dashed inline-block p-24 rounded-lg text-center">
+    <article tw="inline-block p-24 text-center border border-gray-700 border-dashed rounded-lg">
       {withContactHint ? (
         <>
-          <p className="text-3xl text-gray-500 mb-2">
-            <span className="font-display">Deine Band</span>?
+          <p tw="mb-2 text-3xl text-gray-500">
+            <span tw="font-display">Deine Band</span>?
           </p>
-          <a className="btn" href="mailto:vorstand@cwo-ev.de">
+          <a tw="btn" href="mailto:vorstand@cwo-ev.de">
             Jetzt bewerben
           </a>
         </>
       ) : (
-        <p className="text-3xl text-gray-500 font-display">T.B.A.</p>
+        <p tw="text-3xl text-gray-500 font-display">T.B.A.</p>
       )}
     </article>
   )

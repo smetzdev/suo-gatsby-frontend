@@ -1,8 +1,5 @@
 const convert = require("color-convert")
-const {
-  cwoDesigntokens,
-  cwoTailwindConfig,
-} = require("@smetzdev/gatsby-theme-cwo")
+const cwoDesigntokens = require("./cwo-designtokens")
 
 // Returns a shadow-color rgb-string, something like 0,0,1
 const shadowColor = convert.hex
@@ -63,7 +60,22 @@ module.exports = {
         },
       },
     },
-    extend: cwoTailwindConfig.theme.extend,
+    extend: {
+      colors: cwoDesigntokens.colors,
+      fontFamily: {
+        display: ["DaysLater", "Helvetica Neue", "sans-serif"],
+      },
+      spacing: {
+        72: "18rem",
+        80: "20rem",
+        88: "22rem",
+        96: "24rem",
+        104: "26rem",
+        112: "28rem",
+        120: "30rem",
+        128: "32rem",
+      },
+    },
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],

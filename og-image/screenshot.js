@@ -1,5 +1,4 @@
 const puppeteer = require("puppeteer")
-const http = require("http")
 
 const screenshot = async (
   bandNameArray,

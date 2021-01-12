@@ -2,8 +2,7 @@ import { addDecorator, addParameters } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 import { withA11y } from "@storybook/addon-a11y"
 import { customViewports, customBackgrounds } from "./global-parameters"
-import "@smetzdev/gatsby-theme-cwo/css/font-faces.css"
-import "@styles/main.css"
+import "@styles/font-faces.css"
 
 // Global Paramaters
 addParameters({

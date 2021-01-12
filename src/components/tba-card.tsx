@@ -13,9 +13,9 @@ const TBABand: React.FC<withContactHint> = ({ withContactHint }) => {
           <p tw="mb-2 text-3xl text-gray-500">
             <span tw="font-display">Deine Band</span>?
           </p>
-          <a tw="btn" href="mailto:vorstand@cwo-ev.de">
+          {/*  <a tw="btn" href="mailto:vorstand@cwo-ev.de">
             Jetzt bewerben
-          </a>
+          </a> */}
         </>
       ) : (
         <p tw="text-3xl text-gray-500 font-display">T.B.A.</p>

@@ -1,4 +1,4 @@
-import { cwoDesigntokens } from "@smetzdev/gatsby-theme-cwo"
+import { cwoDesigntokens } from "../cwo-designtokens"
 
 const { colors } = cwoDesigntokens
 

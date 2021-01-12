@@ -15,7 +15,7 @@ const Layout: React.FC = ({ children }) => {
 }
 
 // Global Styles
-const globalStyles = css`
+export const globalStyles = css`
   h1,
   h2,
   h3,

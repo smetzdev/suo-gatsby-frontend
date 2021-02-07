@@ -47,13 +47,13 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
-    {
+    /* {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-messages`,
         path: `${__dirname}/src/messages`,
       },
-    },
+    }, */
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,

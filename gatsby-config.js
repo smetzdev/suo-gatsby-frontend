@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `*Abgesagt* Schlacht um Otzenhausen`,
-    date: "07.11.2020",
+    title: `Schlacht um Otzenhausen`,
+    date: "06.11.2021",
     siteUrl:
       process.env.NODE_ENV === "production"
         ? "https://suo-festival.de"
@@ -14,7 +14,7 @@ module.exports = {
         "https://www.google.de/maps/dir//Hunnenringhalle+Otzenhausen,+Ringwallstra%C3%9Fe+8,+66620+Nonnweiler/@49.6050743,6.9931509,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47959061a7d8853d:0x3c977a515cdc0c51!2m2!1d6.9953396!2d49.6050743",
     },
     description: `Das Indoor-Metalfestival im Saarland!`,
-    author: `@r3sMetz`,
+    author: `@smetzdev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
